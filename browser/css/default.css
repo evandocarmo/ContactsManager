@@ -1,0 +1,285 @@
+* { color: #333333; font-family: Arial,sans-serif; font-size: 12px; margin: 0; padding: 0; }
+hr { background: #dddddd none repeat scroll 0 0; border: 0 none; color: #ff0000; float: left; height: 1px; margin: 25px 0; width: 100%; }
+body.settings table { float: left; width: 300px !important; }
+body.settings form#default { float: right; width: 585px; }
+body.settings form#default fieldset { float: left; width: 563px; }
+body.settings form#default div.form-actions { float: left; padding: 15px 10px; width: 565px; }
+.bottom { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #f5f5f5; background-image: linear-gradient(to bottom, #ffffff, #e6e6e6); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #a2a2a2; border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #000000; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin-bottom: 0; padding: 4px 12px; text-align: center; text-decoration: none; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; }
+.command { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin-bottom: 0; padding: 5px 12px; text-align: center; text-decoration: none; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }
+.navigation { background: #000000 none repeat scroll 0 0; float: left; height: 40px; position: fixed; width: 100%; z-index: 100; }
+.navigation .navigation-inner { height: 40px; margin: 0 auto; width: 900px; }
+.navigation .navigation-inner .navigation-brand { float: left; padding-top: 11px; }
+.navigation .navigation-inner .navigation-brand a { color: #ffffff; font-size: 17px; line-height: 17px; text-decoration: none; }
+.navigation .navigation-inner .navigation-menu { float: right; height: 40px; }
+.navigation .navigation-inner .navigation-menu ul { float: left; height: 40px; }
+.navigation .navigation-inner .navigation-menu ul li { float: right; height: 40px; list-style: outside none none; padding: 0 15px; position: relative; text-align: left; }
+.navigation .navigation-inner .navigation-menu ul li a { color: #ffffff; float: left; padding-top: 11px; text-decoration: none; }
+.navigation .navigation-inner .navigation-menu ul li ul { background: #000000 none repeat scroll 0 0; display: none; left: 0; position: absolute; top: 40px; z-index: 900; }
+.navigation .navigation-inner .navigation-menu ul li ul li { float: left; list-style: outside none none; }
+.navigation .navigation-inner .navigation-menu ul li ul li a { font-size: 12px; line-height: 29px; padding: 0; white-space: nowrap; }
+.navigation .navigation-inner .navigation-menu ul li:hover ul { display: block; height: auto; }
+.container { float: left; margin-top: 40px; position: relative; width: 100%; }
+.container .container-inner { float: left; height: auto; left: 50%; margin: 20px auto 10px -450px; padding-bottom: 20px; position: absolute; width: 900px; }
+.container .container-inner table { border-collapse: separate; border-left: 1px solid #dddddd; border-spacing: 0; border-top: 1px solid #dddddd; float: left; width: 100%; }
+.container .container-inner table thead {}
+.container .container-inner table thead tr {}
+.container .container-inner table thead tr th { border-bottom: 1px solid #dddddd; border-right: 1px solid #dddddd; line-height: 20px; padding: 8px; text-align: left; }
+.container .container-inner table tbody {}
+.container .container-inner table tbody tr {}
+.container .container-inner table tbody tr td { background-image: url("../img/bg-colormask.png"); background-position: center center; background-size: 65px auto; border-bottom: 1px solid #dddddd; border-right: 1px solid #dddddd; font-size: 11px; height: 20px; padding: 8px; }
+.container .container-inner table tbody tr td div {}
+.container .container-inner table tbody tr td div ul { float: left; list-style: outside none none; width: 100%; }
+.container .container-inner table tbody tr td div ul li {float: left;}
+.container .container-inner table tbody tr td div ul li a { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #f5f5f5; background-image: url("../img/glyphicons-halflings.png"); background-repeat: no-repeat; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #a2a2a2; border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; height: 15px; line-height: 20px; margin-bottom: 0; padding: 4px 12px; text-align: center; text-decoration: none; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; width: 4px; }
+.container .container-inner table tbody tr td div ul li a.btn-success {background-position: 7px -68px;}
+.container .container-inner table tbody tr td div ul li a.btn-info { background-position: -89px -43px; margin: 0 4px; }
+.container .container-inner table tbody tr td div ul li a.btn-danger {background-position: -161px 5px;}
+.container .container-inner table tbody tr td div ul li a.btn-download {background-position: -88px -20px;}
+.container .container-inner table tbody tr td div ul li a.btn-list {background-position: -258px -19px;}
+form#default fieldset { border: 1px solid #dddddd; float: left; margin-bottom: 20px; padding: 10px; width: 878px; }
+form#default fieldset legend { border-bottom: 1px solid #dddddd; float: left; font-size: 21px; line-height: 21px; margin-bottom: 20px; padding-bottom: 13px; width: 100%; }
+form#default fieldset div.message { background: #008000 none repeat scroll 0 0; color: #ffffff; float: left; margin-bottom: 20px; padding: 8px 5%; width: 90%; }
+form#default fieldset dl { float: left; margin-bottom: 20px; width: 100%; }
+form#default fieldset dl dt { float: left; text-align: right; width: 28%; }
+form#default fieldset dl dt label { float: right; height: 20px; line-height: 20px; padding: 5px 0; }
+form#default fieldset dl dt button { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; line-height: 19px; margin-bottom: 0; padding: 3px 12px; text-align: center; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }
+form#default fieldset dl dd { float: right; width: 70%; }
+form#default fieldset dl dd > input { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; float: left; font-size: 14px; height: 20px; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 87%; }
+form#default fieldset dl dd > textarea { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; float: left; font-size: 14px; height: 150px; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 87%; }
+form#default fieldset dl dd > span { clear: both; float: left; padding: 7px; width: 87%; }
+form#default fieldset dl dd div#cat_color { clear: both; float: left; margin-top: 10px; }
+form#default fieldset dl dd select { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; font-size: 14px; height: 30px; padding: 4px 6px; width: 89%; }
+form#default fieldset dl#canvas-map { float: left; width: 100%; }
+form#default fieldset dl#canvas-map dt {display: none;}
+form#default fieldset dl#canvas-map dd { float: left; height: 300px; width: 100%; }
+form#default div.form-actions { background: #f5f5f5 none repeat scroll 0 0; border-top: 1px solid #e5e5e5; float: left; padding: 15px 275px; width: 350px; }
+form#default div.form-actions button { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin-bottom: 0; padding: 4px 12px; text-align: center; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }
+div.profile-data { float: left; width: 44%; }
+div.profile-data h3 { float: left; font-size: 25px; font-weight: normal; height: 30px; margin-bottom: 10px; max-width: 352px; overflow: hidden; }
+div.profile-data a { background-color: #cccccc; border-radius: 4px; float: left; font-size: 11px; font-weight: bold; margin-left: 10px; margin-top: 7px; padding: 3px 7px; text-decoration: none; }
+div.profile-data table {}
+div.profile-data table tr {}
+div.profile-data table tr td {}
+div.profile-visit { position: absolute; right: 0; width: 54%; }
+div.profile-visit h3 { float: left; font-size: 26px; font-weight: normal; width: 100%; }
+div.profile-visit > div { background-color: #cccccc; float: left; height: 30px; line-height: 30px; margin-top: 10px; text-indent: 10px; width: 100%; }
+div.profile-visit > a { float: right; margin-top: 10px; }
+div.profile-visit ul { float: left; width: 100%; }
+div.profile-visit ul li { border: 1px solid #dddddd; float: left; list-style: outside none none; margin-top: 10px; padding: 3%; position: relative; width: 463px; }
+div.profile-visit ul li div { float: left; width: 463px; }
+div.profile-visit ul li div.accordion-heading {}
+div.profile-visit ul li div.accordion-heading a {}
+div.profile-visit ul li div.collapse-body {}
+div.profile-visit ul li div.collapse-body div.collapse-info {}
+div.profile-visit ul li div.collapse-body div.collapse-bottom {}
+div.profile-visit ul li div.collapse-body div.collapse-bottom a {}
+div.profile-visit ul li div.head { background: #cccccc none repeat scroll 0 0; font-weight: bold; height: 30px; line-height: 30px; margin-bottom: 10px; text-indent: 10px; width: 400px; }
+div.profile-visit ul li div.body div.bottom { position: absolute; right: 15px; top: 15px; width: auto; }
+div.profile-visit form#default { float: left; margin-top: 20px; width: 100%; }
+div.profile-visit form#default fieldset { box-sizing: border-box; float: left; width: 100%; }
+div.profile-visit form#default div.form-actions { box-sizing: border-box; padding: 10px; width: 100%; }
+div#pagination { float: left; height: 31px; margin: 10px 0; width: 100%; }
+div#pagination div#pagination-navigation {float: right;}
+div#pagination div#pagination-navigation ul { border-left: 1px solid #dddddd; float: left; }
+div#pagination div#pagination-navigation ul li { background-color: #ffffff; border-bottom: 1px solid #dddddd; border-right: 1px solid #dddddd; border-top: 1px solid #dddddd; box-sizing: border-box; float: left; font-family: "Open Sans",sans-serif; font-size: 12px; font-weight: 600; line-height: 1.42857; list-style: outside none none; margin-left: 0; position: relative; text-decoration: none; }
+div#pagination div#pagination-navigation ul li a { float: left; font-family: "Open Sans",sans-serif; font-size: 12px; font-weight: normal; padding: 6px 12px; text-decoration: none; }
+div#pagination div#pagination-navigation ul li.first {}
+div#pagination div#pagination-navigation ul li.last {}
+div#pagination div#pagination-navigation ul li.current {padding: 6px 12px;}
+div#pagination div#pagination-navigation ul li.next {}
+div#pagination div#pagination-navigation ul li.prev {}
+div#pagination div#pagination-description { float: left; font-size: 12px; line-height: 31px; text-indent: 5px; }
+tr#filter {}
+tr#filter input { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 0; text-indent: 5px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+tr#filter select { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+tr#filter button.bottom {width: 97px;}
+tr#filter-mobile {}
+tr#filter-mobile input { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 0; text-indent: 5px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+tr#filter-mobile select { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+tr#filter-mobile button.bottom {width: 97px;}
+div#messages-login { background-color: #fef5f1; border: 1px solid #ed541d; box-sizing: border-box; float: left; margin-bottom: 10px; padding: 10px; width: 100%; }
+div#messages-login p { color: #8c2e0b; float: left; font-size: 13px; line-height: 20px; width: 100%; }
+div#statistcs { float: left; width: 100%; }
+div#statistcs ul { float: left; list-style: outside none none; width: 100%; }
+div#statistcs ul li { border: 1px solid #dddddd; float: left; height: 310px; padding: 10px; width: 100%; }
+div#statistcs ul li h1 { border-bottom: 1px solid #dddddd; float: left; font-size: 21px; line-height: 21px; margin-bottom: 20px; padding-bottom: 13px; width: 100%; }
+div#statistcs ul li div#visits {}
+div.profile-fieldsearch form fieldset dl dd select { border: 1px solid #cccccc; border-radius: 5px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; height: 30px; text-indent: 5px; width: 100%; }
+div.foreigner-map {float: left;}
+div.foreigner-map div { clear: both; float: left; font-size: 11px; }
+div.foreigner-map div.for_name { font-size: 16px; margin-bottom: 5px; }
+div.foreigner-map div.for_rout {}
+div.foreigner-map div.for_subl {}
+div.foreigner-map div.for_comp {}
+div.foreigner-map div.for_tele {}
+div.foreigner-map div.for_acto {margin-top: 5px;}
+div.foreigner-map div.for_acto a { background-color: #f5f5f5; background-image: url("../img/glyphicons-halflings.png"); background-repeat: no-repeat; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #a2a2a2; border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; height: 15px; line-height: 20px; margin-bottom: 0; padding: 4px 12px; text-align: center; text-decoration: none; text-indent: -300em; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; width: 4px; }
+div.foreigner-map div.for_acto a.ico-view {background-position: -161px 5px;}
+div.foreigner-map div.for_acto a.ico-edit {background-position: 7px -68px;}
+div.foreigner-map div.for_acto a.ico-prit {background-position: -89px -43px;}
+ul.fieldsearch-visits { float: left; padding-top: 5px; width: 100%; }
+ul.fieldsearch-visits li { border-radius: 4px; float: left; list-style: outside none none; margin-bottom: 5px; margin-right: 5px; }
+ul.fieldsearch-visits li a { color: #ffffff; float: left; height: 25px; line-height: 25px; padding: 0 5px; text-decoration: none; }
+ul.fieldsearch-visits li.red { background-color: #e66665; border: 1px solid #b85250; }
+ul.fieldsearch-visits li.blue { background-color: #82b5e0; border: 1px solid #6991b4; }
+ul.fieldsearch-visits li.green { background-color: #4d9379; border: 1px solid #3f7661; }
+ul.fieldsearch-visits li.yellow { background-color: #ffd602; border: 1px solid #ccac03; }
+div.profile-fieldsearch { clear: left; float: left; margin-top: 20px; width: 44%; }
+div.profile-fieldsearch div.profile-fieldsearch-titl { float: left; font-size: 26px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-list { border: 1px solid #dddddd; float: left; margin-top: 10px; width: 394px; }
+div.profile-fieldsearch div.profile-fieldsearch-list ul { float: left; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-list ul li { border-bottom: 1px solid #dddddd; float: left; list-style: outside none none; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-list ul li:last-child {border-bottom: medium none;}
+div.profile-fieldsearch div.profile-fieldsearch-list ul li div.fis-date { font-weight: bold; height: 25px; width: 67px; }
+div.profile-fieldsearch div.profile-fieldsearch-list ul li div { float: left; line-height: 25px; padding: 5px; }
+div.profile-fieldsearch div.profile-fieldsearch-list ul li div.fis-cond { border-left: 1px solid #dddddd; border-right: 1px solid #dddddd; height: 25px; width: 265px; }
+div.profile-fieldsearch div.profile-fieldsearch-list ul li div.fis-actn {width: 30px;}
+div.profile-fieldsearch div.profile-fieldsearch-list ul li div.fis-actn a { background-color: #f5f5f5; background-image: url("../img/glyphicons-halflings.png"); background-position: -305px 5px; background-repeat: no-repeat; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #a2a2a2; border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; height: 15px; line-height: 20px; margin-bottom: 0; padding: 4px 12px; text-align: center; text-decoration: none; text-indent: -500em; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; width: 4px; }
+div.profile-fieldsearch div.profile-fieldsearch-form { float: left; margin-top: 10px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form { float: left; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset { border: 1px solid #dddddd; float: left; padding: 10px; width: 374px; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset legend { float: left; font-size: 25px; font-weight: bold; height: 35px; line-height: 35px; margin-left: -10px; margin-top: -50px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl { box-sizing: border-box; float: left; width: 189px; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl:nth-child(1) {width: 105px;}
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl:nth-child(3) {width: 60px;}
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl:nth-child(2) {margin: 0 10px;}
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl dt { float: left; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl dt label { float: left; font-size: 14px; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl dd { float: left; margin-top: 5px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl dd input { border: 1px solid #cccccc; border-radius: 5px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; height: 30px; text-indent: 5px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl dd label { background-color: #fef5f1; border: 1px solid #ed541d; box-sizing: border-box; color: #8c2e0b; float: left; font-size: 13px; margin-top: 10px; padding: 5px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form div.form-actions { background-color: #f5f5f5; border-top: 1px solid #e5e5e5; box-sizing: border-box; float: left; margin-top: 10px; padding: 10px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form div.form-actions input { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin-bottom: 0; padding: 4px 12px; text-align: center; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }
+div#filter { float: left; margin-left: 10px; width: 200px; }
+div#filter form { float: left; width: 100%; }
+div#filter form select { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0 0 10px; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+div#filter form input {}
+div#piechart { border: 1px solid #dddddd; float: left; height: 200px; margin-bottom: 10px; width: 250px; }
+div#fieldservice-add { float: left; margin-top: 10px; width: 400px; }
+div#fieldservice-add div#fieldservice-add-messag { background-color: #fef5f1; border: 1px solid #ed541d; box-sizing: border-box; color: #8c2e0b; font-size: 13px; margin-bottom: 10px; padding: 5px 10px; }
+div#fieldservice-add div#fieldservice-add-fields { float: left; width: 100%; }
+div#fieldservice-add div#fieldservice-add-fields form { float: left; width: 100%; }
+div#fieldservice-add div#fieldservice-add-fields form fieldset { border: 1px solid #dddddd; box-sizing: border-box; float: left; margin-bottom: 10px; padding: 10px; width: 100%; }
+div#fieldservice-add div#fieldservice-add-fields form fieldset legend { border-bottom: 1px solid #dddddd; float: left; font-size: 21px; line-height: 20px; margin-bottom: 10px; padding-bottom: 13px; width: 100%; }
+div#fieldservice-add div#fieldservice-add-fields form fieldset dl { float: left; width: 100%; }
+div#fieldservice-add div#fieldservice-add-fields form fieldset dl dt { float: left; text-align: right; width: 28%; }
+div#fieldservice-add div#fieldservice-add-fields form fieldset dl dt label { float: right; height: 20px; line-height: 20px; padding: 5px 0; }
+div#fieldservice-add div#fieldservice-add-fields form fieldset dl dt button { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; line-height: 19px; margin-bottom: 0; padding: 3px 12px; text-align: center; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }
+div#fieldservice-add div#fieldservice-add-fields form fieldset dl dd { float: right; width: 70%; }
+div#fieldservice-add div#fieldservice-add-fields form fieldset dl dd > input { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; float: left; font-size: 14px; height: 20px; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 87%; }
+div#fieldservice-add div#fieldservice-add-fields form div.form-actions { background: #f5f5f5 none repeat scroll 0 0; border-top: 1px solid #e5e5e5; float: left; width: 100%; }
+div#fieldservice-add div#fieldservice-add-fields form div.form-actions input { background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin: 10px; padding: 4px 12px; text-align: center; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }
+div#fieldservice-unlisted { border: 1px solid #dddddd; box-sizing: border-box; float: left; margin-left: 10px; margin-top: 10px; padding: 10px; width: 490px; }
+div#fieldservice-unlisted div#fieldservice-unlisted-title { border-bottom: 1px solid #dddddd; float: left; font-size: 21px; line-height: 21px; margin-bottom: 10px; padding-bottom: 13px; width: 100%; }
+div#fieldservice-unlisted div#fieldservice-unlisted-lists { float: left; width: 100%; }
+div#fieldservice-unlisted div#fieldservice-unlisted-lists ul { float: left; width: 100%; }
+div#fieldservice-unlisted div#fieldservice-unlisted-lists ul li { background-color: #fef5f1; border-radius: 2px; float: left; list-style: outside none none; margin-bottom: 5px; margin-right: 5px; }
+div#fieldservice-unlisted div#fieldservice-unlisted-lists ul li a { border: 1px solid #ed541d; border-radius: 5px; color: #8c2e0b; float: left; height: 25px; line-height: 25px; padding: 0 5px; text-decoration: none; }
+div.profile-fieldservice { clear: left; float: left; margin-top: 15px; width: 44%; }
+div.profile-fieldservice form { float: left; width: 100%; }
+div.profile-fieldservice form fieldset { border: 0 none; float: left; width: 100%; }
+div.profile-fieldservice form fieldset dl { float: left; width: 100%; }
+div.profile-fieldservice form fieldset dl dt { float: left; width: 100%; }
+div.profile-fieldservice form fieldset dl dt label { float: left; font-size: 26px; width: 100%; }
+div.profile-fieldservice form fieldset dl dd { border: 1px solid #cccccc; border-radius: 5px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; float: left; height: 25px; margin-top: 10px; padding: 5px; text-indent: 5px; width: calc(100% - 12px); }
+div.profile-fieldservice form fieldset dl dd select { border: 0 none; float: left; height: 25px; text-indent: 5px; width: 100%; }
+div.profile-fieldservice form div.form-actions { background-color: #f5f5f5; border-top: 1px solid #e5e5e5; box-sizing: border-box; float: left; margin-top: 10px; padding: 10px; width: 100%; }
+div.profile-fieldservice form div.form-actions input { background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin-bottom: 0; padding: 4px 12px; text-align: center; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }
+ul.fieldservice-browse-foreigers { float: left; padding-top: 5px; width: 100%; }
+ul.fieldservice-browse-foreigers li { border-radius: 4px; float: left; list-style: outside none none; margin-bottom: 5px; margin-right: 5px; padding: 3px 7px; }
+ul.fieldservice-browse-foreigers li.green { background-color: #4d9379; border: 1px solid #3f7661; }
+ul.fieldservice-browse-foreigers li.orange { background-color: #f47d43; border: 1px solid #c36436; }
+ul.fieldservice-browse-foreigers li.blue { background-color: #82b5e0; border: 1px solid #6991b4; }
+ul.fieldservice-browse-foreigers li.yellow { background-color: #ffd602; border: 1px solid #ccac03; }
+ul.fieldservice-browse-foreigers li.red { background-color: #e66665; border: 1px solid #b85250; }
+ul.fieldservice-browse-foreigers li div.foreiger {}
+ul.fieldservice-browse-foreigers li div.foreiger a { color: #ffffff; float: left; font-size: 13px; font-weight: bold; text-decoration: none; }
+ul.fieldservice-browse-foreigers li div.last-visit { color: #ffffff; float: left; font-size: 10px; }
+div.statistics-fieldservice { float: left; margin-top: 10px; width: 150px; }
+div.statistics-fieldservice form { float: left; width: 100%; }
+div.statistics-fieldservice form fieldset { border: 0 none; float: left; width: 100%; }
+div.statistics-fieldservice form fieldset dl { float: left; width: 100%; }
+div.statistics-fieldservice form fieldset dl dt { display: none; float: left; width: 100%; }
+div.statistics-fieldservice form fieldset dl dt label {float: left;}
+div.statistics-fieldservice form fieldset dl dd { border: 1px solid #cccccc; border-radius: 5px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; float: left; height: 25px; padding: 3px; width: calc(100% - 8px); }
+div.statistics-fieldservice form fieldset dl dd select { border: 0 none; float: left; font-size: 12px; height: 25px; width: 100%; }
+div.statistics-fieldservice form div.form-actions { background-color: #f5f5f5; border-top: 1px solid #e5e5e5; box-sizing: border-box; float: left; margin-top: 10px; padding: 5px; width: 100%; }
+div.statistics-fieldservice form div.form-actions input { background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin-bottom: 0; padding: 2px 6px; text-align: center; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }
+div#fieldservice-work { float: right; margin-top: 10px; width: 100%; }
+div#fieldservice-work div.fieldservice-work-view { float: left; margin-bottom: 5px; width: 100%; }
+div#fieldservice-work div.fieldservice-work-view p { float: left; font-weight: bold; padding: 10px; }
+div#fieldservice-work div.fieldservice-work-form { background-color: #f5f5f5; border-top: 1px solid #e5e5e5; box-sizing: border-box; float: right; padding: 10px; width: 100%; }
+div#fieldservice-work div.fieldservice-work-form form { float: left; width: 100%; }
+div#fieldservice-work div.fieldservice-work-form form fieldset { border: 0 none; float: left; }
+div#fieldservice-work div.fieldservice-work-form form fieldset dl { float: left; margin-right: 10px; }
+div#fieldservice-work div.fieldservice-work-form form fieldset dl dt { float: left; height: 32px; margin-right: 10px; }
+div#fieldservice-work div.fieldservice-work-form form fieldset dl dt label { float: left; font-size: 12px; font-weight: bold; height: 32px; line-height: 32px; }
+div#fieldservice-work div.fieldservice-work-form form fieldset dl dd {float: left;}
+div#fieldservice-work div.fieldservice-work-form form fieldset dl dd input { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 32px; text-indent: 5px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+div#fieldservice-work div.fieldservice-work-form form fieldset dl dd label { background-color: #e66665; box-sizing: border-box; color: #ffffff; float: left; font-size: 11px; font-weight: bold; margin-top: 5px; padding: 3px; text-indent: 3px; width: 100%; }
+div#fieldservice-work div.fieldservice-work-form form fieldset dl:nth-child(2) {margin: 0;}
+div#fieldservice-work div.fieldservice-work-form form > input { background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; float: left; font-size: 14px; line-height: 20px; margin-bottom: 0; margin-left: 10px; padding: 4px 12px; text-align: center; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }
+div#fieldservice-read td.green {background-color: #4d9379;}
+div#fieldservice-read td.orange {background-color: #f47d43;}
+div#fieldservice-read td.blue {background-color: #82b5e0;}
+div#fieldservice-read td.yellow {background-color: #ffd602;}
+div#fieldservice-read td.red {background-color: #e66665;}
+div#waiting-unlisted { border: 1px solid #dddddd; box-sizing: border-box; float: right; margin-bottom: 10px; padding: 10px; width: 638px; }
+div#waiting-unlisted div#waiting-unlisted-title { border-bottom: 1px solid #dddddd; float: left; font-size: 21px; line-height: 21px; margin-bottom: 10px; padding-bottom: 13px; width: 100%; }
+div#waiting-unlisted div#waiting-unlisted-lists { float: left; width: 100%; }
+div#waiting-unlisted div#waiting-unlisted-lists ul { float: left; width: 100%; }
+div#waiting-unlisted div#waiting-unlisted-lists ul li { background-color: #fef5f1; border-radius: 2px; float: left; list-style: outside none none; margin-bottom: 5px; margin-right: 5px; }
+div#waiting-unlisted div#waiting-unlisted-lists ul li a { border: 1px solid #ed541d; border-radius: 5px; color: #8c2e0b; float: left; height: 25px; line-height: 25px; padding: 0 5px; text-decoration: none; }
+div#waiting-info { border: 1px solid #dddddd; box-sizing: border-box; float: left; margin-bottom: 10px; margin-left: 10px; padding: 10px; width: 638px; }
+div#waiting-info ul { float: left; width: 100%; }
+div#waiting-info ul li { float: left; list-style: inside none square; margin-bottom: 5px; text-align: left; width: 100%; }
+div#waiting-info ul li span { color: #000000; font-size: 12px; }
+div#waiting-info ul li.red {color: #e66665;}
+div#waiting-info ul li.green {color: #4d9379;}
+div#waiting-info ul li.blue {color: #82b5e0;}
+div#waiting-info ul li.yellow { color: #ffd602; margin: 0; }
+div.profile-publishers { clear: left; float: left; margin-top: 15px; width: 44%; }
+div.profile-publishers form { float: left; width: 100%; }
+div.profile-publishers form fieldset { border: 0 none; float: left; width: 100%; }
+div.profile-publishers form fieldset dl { float: left; width: 100%; }
+div.profile-publishers form fieldset dl dt { float: left; width: 100%; }
+div.profile-publishers form fieldset dl dt label { float: left; font-size: 26px; width: 100%; }
+div.profile-publishers form fieldset dl dd { border: 1px solid #cccccc; border-radius: 5px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; float: left; height: 25px; margin-top: 10px; padding: 5px; text-indent: 5px; width: calc(100% - 12px); }
+div.profile-publishers form fieldset dl dd select { border: 0 none; float: left; height: 25px; text-indent: 5px; width: 100%; }
+div.profile-publishers form div.form-actions { background-color: #f5f5f5; border-top: 1px solid #e5e5e5; box-sizing: border-box; float: left; margin-top: 10px; padding: 10px; width: 100%; }
+div.profile-publishers form div.form-actions input { background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin-bottom: 0; padding: 4px 12px; text-align: center; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }
+div#reserved-unlisted { border: 1px solid #dddddd; box-sizing: border-box; float: right; margin-bottom: 10px; padding: 10px; width: 100%; }
+div#reserved-unlisted div#reserved-unlisted-title { border-bottom: 1px solid #dddddd; float: left; font-size: 21px; line-height: 21px; margin-bottom: 10px; padding-bottom: 13px; width: 100%; }
+div#reserved-unlisted div#reserved-unlisted-lists { float: left; width: 100%; }
+div#reserved-unlisted div#reserved-unlisted-lists ul { float: left; width: 100%; }
+div#reserved-unlisted div#reserved-unlisted-lists ul li { background-color: #fef5f1; border-radius: 2px; float: left; list-style: outside none none; margin-bottom: 5px; margin-right: 5px; }
+div#reserved-unlisted div#reserved-unlisted-lists ul li a { border: 1px solid #ed541d; border-radius: 5px; color: #8c2e0b; float: left; height: 25px; line-height: 25px; padding: 0 5px; text-decoration: none; }
+div#reserved-unlisted div#reserved-unlisted-lists p {}
+div#reserved-table {}
+div#reserved-table td.green {background-color: #4d9379;}
+div#reserved-table td.red {background-color: #e66665;}
+div#dashboard { float: left; width: 100%; }
+div#dashboard dl { border: 1px solid #dddddd; box-sizing: border-box; float: left; margin-bottom: 10px; padding: 10px; width: 100%; }
+div#dashboard dl dt { border-bottom: 1px solid #dddddd; float: left; font-size: 21px; line-height: 21px; margin-bottom: 10px; padding-bottom: 13px; width: 100%; }
+div#dashboard dl dd { float: left; width: 100%; }
+dd#waiting {}
+dd#waiting div#waiting-piechart { float: left; height: 100px; overflow: hidden; width: 150px; }
+dd#waiting div#waiting-piechart > div {margin-top: -28px;}
+dd#waiting div#waiting-info { height: 100px; margin: 0; width: 490px; }
+div#waiting-numbers { border: 1px solid #dddddd; float: left; margin-right: 10px; width: 114px; }
+div#waiting-numbers ul { float: left; padding: 10px; }
+div#waiting-numbers ul li { box-sizing: border-box; float: left; font-size: 14px; font-weight: bold; height: 36px; line-height: 36px; list-style: outside none none; text-align: center; width: 45px; }
+div#waiting-numbers ul li:nth-child(2n) {float: right;}
+div#waiting-numbers ul li.red { background-color: #e66665; margin-bottom: 6px; }
+div#waiting-numbers ul li.green { background-color: #4d9379; margin-bottom: 6px; }
+div#waiting-numbers ul li.blue {background-color: #82b5e0;}
+div#waiting-numbers ul li.yellow {background-color: #ffd602;}
+dd#waiting div#waiting-unlisted { height: 100px; margin: 0; width: 100px; }
+dd#waiting div#waiting-unlisted div.number { float: left; font-size: 45px; text-align: center; width: 100%; }
+dd#waiting div#waiting-unlisted div.description { float: left; font-size: 12px; text-align: center; width: 100%; }
+div#updates-areachart {min-height: 250px;}
+div#visits-linechart {min-height: 250px;}
+div#dashboard dl dt div#system-updates-title { float: left; font-size: 21px; line-height: 21px; }
+div#dashboard dl dt div#system-updates-form {float: right;}
+div#dashboard dl dt div#system-updates-form form {}
+div#dashboard dl dt div#system-updates-form form select { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }

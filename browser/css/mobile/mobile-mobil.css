@@ -1,0 +1,67 @@
+html, body { height: 100%; width: 100%; }
+html.slideout-open {overflow: hidden;}
+html.slideout-open body {overflow: hidden;}
+html.slideout-open div.slideout-panel {overflow: hidden;}
+html.slideout-open div.slideout-menu {display: block;}
+div.slideout-menu { bottom: 0; display: none; left: 0; overflow-y: auto; position: fixed; right: 0; top: 0; width: 256px; z-index: 0; }
+div.slideout-panel { position: relative; z-index: 1; }
+div#menu { background-color: #34425a; height: 100%; min-height: 100%; text-align: center; }
+div#menu div.container-tpbar { height: 50px; position: absolute; width: 100%; }
+div#menu div.container-tpbar a.toggle { background-image: url("../../img/menu-blue-126x126.png"); background-position: right center; background-repeat: no-repeat; float: right; height: 50px; text-indent: -500em; width: 50px; }
+div#menu div.navigation-inner { float: left; height: 100%; width: 100%; }
+div#menu div.navigation-inner div.navigation-brand { display: none; float: left; padding: 8px 0 7px; width: 100%; }
+div#menu div.navigation-inner div.navigation-brand h1 { color: #ffffff; float: left; font-size: 13px; font-weight: normal; text-align: center; text-decoration: none; width: 100%; }
+div#menu div.navigation-inner div.navigation-brand h2 { color: #899dc1; float: left; font-size: 11px; font-weight: normal; width: 100%; }
+div#menu div.navigation-inner div.navigation-menu { float: left; margin-top: 50px; width: 100%; }
+div#menu div.navigation-inner div.navigation-menu ul { float: left; width: 100%; }
+div#menu div.navigation-inner div.navigation-menu ul li { float: left; height: 80px; list-style: outside none none; position: relative; width: 100%; }
+div#menu div.navigation-inner div.navigation-menu ul li:hover {background-color: #2b384e;}
+div#menu div.navigation-inner div.navigation-menu ul li.active {background-color: #2b384e;}
+div#menu div.navigation-inner div.navigation-menu ul li a { color: #899dc1; float: left; font-size: 13px; height: 50px; left: 0; line-height: 85px; padding: 15px 0; position: absolute; text-decoration: none; width: 100%; }
+div#menu div.navigation-inner div.navigation-menu ul li span { color: #899dc1; float: left; font-size: 30px; margin-top: 15px; width: 100%; }
+div#menu div.navigation-inner div.navigation-menu ul li ul {}
+div#menu div.navigation-inner div.navigation-menu ul li ul li {}
+div#menu div.navigation-inner div.navigation-menu ul li ul li a {}
+div#panl { background-color: #f4f4f4; height: 100%; min-height: 100%; text-align: center; }
+div#panl div.container-inner { float: left; height: calc(100% - 50px); left: 50%; margin: 0 auto 0 -45%; position: relative; width: 90%; }
+div#panl div.container-inner p { color: #8c2e0b; float: left; font-size: 13px; margin-bottom: 5px; text-align: left; width: 100%; }
+div#panl div.container-inner p:last-child {margin: 0;}
+div#panl div.container-tpbar { background-color: #34425a; float: left; height: 50px; position: relative; width: 100%; }
+div#panl div.container-tpbar a { background-image: url("../../img/menu-blue-126x126.png"); background-position: left center; background-repeat: no-repeat; height: 50px; left: 0; position: absolute; text-indent: -500em; top: 0; width: 50px; }
+div#login { background-image: url("/browser/img/hand.png"); background-position: center bottom; background-repeat: no-repeat; height: 100%; margin: 0 auto; max-width: 400px; }
+div#login div#login-messages { background-color: #fef5f1; border: 1px solid #ed541d; box-sizing: border-box; float: left; margin-top: 10px; padding: 5px; width: 100%; }
+div#login div#login-form { float: left; margin-top: 20px; width: 100%; }
+div#login div#login-form form { float: left; width: 100%; }
+div#login div#login-form form fieldset { float: left; width: 100%; }
+div#login div#login-form form fieldset legend { float: left; font-size: 13px; line-height: 30px; width: 100%; }
+div#login div#login-form form fieldset legend strong { color: #6c6c6c; float: left; font-size: 22px; font-weight: normal; width: 100%; }
+div#login div#login-form form fieldset dl { float: left; margin-top: 10px; width: 100%; }
+div#login div#login-form form fieldset dl dt {display: none;}
+div#login div#login-form form fieldset dl dt label {}
+div#login div#login-form form fieldset dl dd { float: left; width: 100%; }
+div#login div#login-form form fieldset dl dd input { border: 1px solid #dce1e4; box-sizing: border-box; color: #555555; float: left; font-size: 13px; height: 40px; line-height: 40px; text-indent: 15px; width: 100%; }
+div#login div#login-form form div.form-actions { float: left; margin-top: 10px; width: 100%; }
+div#login div#login-form form div.form-actions button { background-color: #34425a; color: #ffffff; float: left; font-size: 13px; height: 40px; width: 100%; }
+div#foreigner { background-position: center bottom; background-repeat: no-repeat; height: 100%; margin: 0 auto; max-width: 400px; }
+div#foreigner div { float: left; width: 100%; }
+div#foreigner div.foreigner-messanger { background-color: #fef5f1; border: 1px solid #ed541d; box-sizing: border-box; float: left; margin-top: 10px; padding: 5px; width: 100%; margin-bottom: -10px; }
+div#foreigner div.foreigner-name { color: #6c6c6c; font-size: 22px; font-weight: normal; margin-top: 20px; text-align: center; }
+div#foreigner div.foreigner-tele { color: #6c6c6c; font-size: 14px; font-weight: bold; margin-top: 5px; }
+div#foreigner div.foreigner-desc {margin-top: 20px;}
+div#foreigner div.foreigner-desc form { float: left; width: 100%; }
+div#foreigner div.foreigner-desc form fieldset { float: left; margin-bottom: 10px; width: 100%; }
+div#foreigner div.foreigner-desc form fieldset dl {}
+div#foreigner div.foreigner-desc form fieldset dl dt {display: none;}
+div#foreigner div.foreigner-desc form fieldset dl dt label {}
+div#foreigner div.foreigner-desc form fieldset dl dd {}
+div#foreigner div.foreigner-desc form fieldset dl dd textarea { border: 1px solid #dce1e4; box-sizing: border-box; color: #555555; float: left; font-size: 13px; line-height: 40px; resize: none; text-indent: 15px; width: 100%; }
+div#foreigner div.foreigner-desc form input { background-color: #34425a; color: #ffffff; float: left; font-size: 13px; height: 40px; width: 100%; }
+div#dashboard { background-position: center bottom; background-repeat: no-repeat; height: 100%; margin: 0 auto; max-width: 400px; }
+div#dashboard > h1 { color: #6c6c6c; font-size: 22px; font-weight: normal; margin-top: 20px; text-align: center; float: left; width: 100%; }
+div#dashboard > a { background-color: #34425a; color: #ffffff; float: left; font-size: 13px; font-weight: bold; height: 40px; line-height: 38px; margin-top: 15px; text-decoration: none; width: 100%; }
+div#dashboard > table { border-collapse: separate; border-left: 1px solid #dddddd; border-spacing: 0; border-top: 1px solid #dddddd; float: left; margin-top: 10px; width: 100%; }
+div#dashboard > table thead {}
+div#dashboard > table thead tr {}
+div#dashboard > table thead tr th { border-bottom: 1px solid #dddddd; border-right: 1px solid #dddddd; font-size: 12px; line-height: 20px; padding: 8px; text-align: left; }
+div#dashboard > table tbody tr {}
+div#dashboard > table tbody tr td { background-image: url("../img/bg-colormask.png"); background-size: contain; border-bottom: 1px solid #dddddd; border-right: 1px solid #dddddd; font-size: 12px; padding: 8px; text-align: left; }

@@ -1,0 +1,19 @@
+{
+  "name": "contactsmanager",
+  "authors": [
+    "Elvis Oliveira <elvis.olv@gmail.com>"
+  ],
+  "description": "Manage foreigners contacts from a private list.",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "slideout.js": "^0.1.12",
+    "jquery-validation": "^1.15.1",
+    "jquery-mask-plugin": "^1.14.0",
+    "geocomplete": "^1.7.0",
+    "bootstrap-colorpicker": "^2.3.6",
+    "font-awesome": "^4.7.0"
+  }
+}

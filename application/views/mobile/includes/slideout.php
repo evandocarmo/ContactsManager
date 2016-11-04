@@ -1,0 +1,1 @@
+<script type="text/javascript"> var slideout = new Slideout({ 'panel': document.getElementById('panl'), 'menu': document.getElementById('menu'), 'padding': 256, 'tolerance': 70 }); $('.toggle').click(function () { slideout.toggle(); });</script>

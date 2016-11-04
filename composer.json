@@ -1,0 +1,29 @@
+{
+    "name": "vendor/contactsmanager",
+    "description": "Description of project contactsmanager.",
+    "authors": [
+        {
+            "name": "elvisoliveira",
+            "email": "elvis.olv@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/elvisoliveira/CodeIgniter-PHP-QR-Code.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/elvisoliveira/strptime-php.git"
+        }
+    ],
+    "require": {
+        "knplabs/knp-snappy": "^0.4.3",
+        "setasign/fpdi": "^1.6",
+        "setasign/fpdi-fpdf": "^1.6",
+        "phpoffice/phpexcel": "^1.8",
+        "gabrielkaputa/bitly": "^1.0",
+        "elvisoliveira/CodeIgniter-PHP-QR-Code": "dev-master",
+        "elvisoliveira/strptime-php": "dev-master"
+    }
+}

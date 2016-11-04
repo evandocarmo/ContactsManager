@@ -1,0 +1,18 @@
+* { font-family: arial; margin: 0; padding: 0; }
+body {}
+div.mobile { padding: 2%; width: 96%; }
+div.mobile ul#mobile { float: left; width: 100%; }
+div.mobile ul#mobile li { float: left; list-style: outside none none; margin-bottom: 2%; width: 100%; }
+div.mobile ul#mobile li div.title { background-color: black; color: white; font-size: 23px; font-weight: bold; height: 40px; line-height: 39px; text-indent: 10px; }
+div.mobile ul#mobile li div.content { float: left; width: 100%; }
+div#heatmap-area {}
+div.profile-data { padding: 2%; width: 96% !important; }
+div.profile-data h3 { border-bottom: 1px dotted black; font-size: 22px; padding-bottom: 15px; }
+div.profile-data dl { border-bottom: 1px dotted black; border-left: 1px dotted black; border-right: 1px dotted black; box-sizing: border-box; float: left; font-size: 16px; width: 100%; }
+div.profile-data dl dt { box-sizing: border-box; float: left; font-weight: bold; padding: 2%; width: 40%; }
+div.profile-data dl dd { border-left: 1px dotted black; box-sizing: border-box; float: right; padding: 2%; width: 60%; }
+div.profile-visit { padding: 2%; width: 96% !important; }
+div.profile-visit h3 { border-bottom: 1px dotted black; font-size: 25px; padding-bottom: 10px; }
+div.profile-visit dl { border-bottom: 1px dotted black; border-left: 1px dotted black; border-right: 1px dotted black; box-sizing: border-box; float: left; font-size: 16px; width: 100%; }
+div.profile-visit dl dt { box-sizing: border-box; float: left; font-weight: bold; padding: 2%; width: 40%; }
+div.profile-visit dl dd { border-left: 1px dotted black; box-sizing: border-box; float: right; line-height: 20px; padding: 2%; width: 60%; }
