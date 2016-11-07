@@ -1,6 +1,6 @@
 {
     "name": "vendor/contactsmanager",
-    "description": "Description of project contactsmanager.",
+    "description": "ContactsManager is a web utility to manage your contacts (duh?) with Google Maps API integration.",
     "authors": [
         {
             "name": "elvisoliveira",

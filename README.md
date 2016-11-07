@@ -39,19 +39,16 @@ After installing [Composer](https://getcomposer.org/) and executing the command 
 ### Node.js
 
 In order to make available the client side package manager [Bower](ttps://bower.io/) and the task runner [Grunt](http://gruntjs.com/) it is required to install [Node.js](https://nodejs.org/).
+
 ```bash
 npm update
 ```
 
-* [Slideout.js](https://github.com/Mango/slideout)
-* [jQuery Validation](https://github.com/jzaefferer/jquery-validation)
-* [jQuery Mask Plugin](https://github.com/igorescobar/jQuery-Mask-Plugin)
-* [Geocomplete](https://github.com/ubilabs/geocomplete)
-* [Bootstrap Colorpicker 2](https://github.com/itsjavi/bootstrap-colorpicker)
-* [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
+* [Grunt](https://github.com/gruntjs/grunt)
+* [Bower](https://github.com/bower/bower)
+* [Bower components builder for Grunt](https://github.com/sapegin/grunt-bower-concat)
 
 After installing [Node.js](https://nodejs.org/) and executing the command **update** on the command-line interface, the packages above will be installed.
-
 
 ### Bower
 see [Google Developers](https://developers.google.com/maps/premium/usage-limits#maps-javascript-api-services-client-side)

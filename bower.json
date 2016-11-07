@@ -3,7 +3,7 @@
   "authors": [
     "Elvis Oliveira <elvis.olv@gmail.com>"
   ],
-  "description": "Manage foreigners contacts from a private list.",
+  "description": "ContactsManager is a web utility to manage your contacts (duh?) with Google Maps API integration.",
   "main": "",
   "license": "MIT",
   "homepage": "",
