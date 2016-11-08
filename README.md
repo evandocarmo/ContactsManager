@@ -38,7 +38,7 @@ After installing [Composer](https://getcomposer.org/) and executing the command 
 
 ### Node.js
 
-In order to make available the client side package manager [Bower](ttps://bower.io/) and the task runner [Grunt](http://gruntjs.com/) it is required to install [Node.js](https://nodejs.org/).
+In order to make available the client side package manager [Bower](https://bower.io/) and the task runner [Grunt](http://gruntjs.com/) it is required to install [Node.js](https://nodejs.org/).
 
 ```bash
 npm update
@@ -60,7 +60,7 @@ Due to the authentication layer and use limitations on **Google Maps API**, it i
 As the integration with **Google Maps API** is required to be on the client side, a package manager called [Bower](ttps://bower.io/) is required to make it easier to be up-to-date with the changes on the **Google Maps API** javascript library [Geocomplete](https://github.com/ubilabs/geocomplete). Althout this is the main reason, other browser dependencies are also managed by this application.
 
 ```bash
-bower update
+node_modules/bower/bin/bower update
 ```
 
 * [Slideout.js](https://github.com/Mango/slideout)
@@ -70,17 +70,25 @@ bower update
 * [Bootstrap Colorpicker 2](https://github.com/itsjavi/bootstrap-colorpicker)
 * [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
 
-After executing the command **update**, [Bower](ttps://bower.io/) will install the packages above.
+After executing the command **update**, [Bower](https://bower.io/) will install the packages above.
 
 ### Grunt
 
-The task runner [Grunt](http://gruntjs.com/) is required to convert all the scripts and styles generated from the [Bower](ttps://bower.io/) package manager to the project assets directory.
+The task runner [Grunt](http://gruntjs.com/) is required to convert all the scripts and styles generated from the [Bower](https://bower.io/) package manager to the project assets directory.
 
 ```bash
-grunt
+node_modules/grunt/bin/grunt
 ```
 
-## Database
+### wkhtmltopdf
+
+As the grouped contacts card have **Google Maps API** integration with **Google Maps Directions API**, and need to be outputed in **PDF** for easy transport and print, [wkhtmltopdf](http://wkhtmltopdf.org/) needs to be installed.
+
+> wkhtmltopdf and wkhtmltoimage are open source (LGPLv3) command line tools to render HTML into PDF and various image formats using the Qt WebKit rendering engine. These run entirely "headless" and do not require a display or display service.
+
+## Setup
+
+### Database
 
 The sctucture of the database ca be imported using the **BASIC.sql** file, located at **assets/database/** folder. Due to the usual updates, more **.sql** files are added in the same folder, to have the most updated version of the utility, import them as well, following the date order on the file names.
 
