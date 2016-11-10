@@ -1,0 +1,7 @@
+ # ---------------------------
+ # CACHE
+ # ---------------------------
+ #
+ # The CACHE folder is required.
+ #
+Deny from all

@@ -1,6 +1,16 @@
 <?php
 
+/*
+ * ---------------------------------------------------------------
+ * COMPOSER
+ * ---------------------------------------------------------------
+ *
+ * Composer autoload will add the required features mentioned
+ * on the README.md.
+ *
+ */
 include_once './vendor/autoload.php';
+
 /*
  * ---------------------------------------------------------------
  * APPLICATION ENVIRONMENT

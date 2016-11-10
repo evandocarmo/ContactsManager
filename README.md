@@ -92,6 +92,12 @@ As the grouped contacts card have **Google Maps API** integration with **Google 
 
 The sctucture of the database ca be imported using the **BASIC.sql** file, located at **assets/database/** folder. Due to the usual updates, more **.sql** files are added in the same folder, to have the most updated version of the utility, import them as well, following the date order on the file names.
 
+### Cofiguration
+
+## .htaccess
+
+The "RewriteBase" parameter on **.htaccess** file should always point to the base directory of the application, from the root folder assigned by the web server.
+
 ## Last Words
 
 This is a MIT licensed project. Have fun. **:)**

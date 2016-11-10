@@ -5,6 +5,10 @@ assets/**/*.png
 browser/**/_bower.js
 browser/**/_bower.css
 
+### Config
+application/config/config.php
+application/config/database.php
+
 ### Composer
 composer.phar
 /vendor/
@@ -15,15 +19,9 @@ composer.phar
 
 ### CodeIgniter
 */config/development
-*/logs/log-*.php
-!*/logs/index.html
-*/cache/*
-!*/cache/index.html
-!*/cache/.htaccess
 
 ### CodeIgniter Patch
-application/logs/*
-!application/logs/index.html
+application/logs/*.txt
 !application/logs/.htaccess
 
 ### Bower
@@ -34,7 +32,6 @@ bower_components
 
 ### Node
 # Logs
-logs
 *.log
 npm-debug.log*
 
@@ -77,3 +74,11 @@ jspm_packages
 
 # Output of 'npm pack'
 *.tgz
+
+### NetBeans ###
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
