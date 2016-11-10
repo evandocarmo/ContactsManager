@@ -6,6 +6,11 @@
 class FPDE extends FPDI
 {
 
+    function __construct()
+    {
+        parent::__construct();
+    }
+
     function TextWithDirection($x, $y, $txt_, $direction = 'R')
     {
         $txt = str_replace(')', '\\)', str_replace('(', '\\(', str_replace('\\', '\\\\', $txt_)));
@@ -43,7 +48,7 @@ class FPDE extends FPDI
         $txt = str_replace(')', '\\)', str_replace('(', '\\(', str_replace('\\', '\\\\', $txt_)));
 
         $font_angle += 90 + $txt_angle;
-        $txt_angle  *= M_PI / 180;
+        $txt_angle *= M_PI / 180;
         $font_angle *= M_PI / 180;
 
         $txt_dx  = cos($txt_angle);

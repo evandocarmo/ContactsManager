@@ -25,5 +25,8 @@
         "gabrielkaputa/bitly": "^1.0",
         "elvisoliveira/CodeIgniter-PHP-QR-Code": "dev-master",
         "elvisoliveira/strptime-php": "dev-master"
+    },
+    "require-dev": {
+        "raveren/kint": "^1.0"
     }
 }
