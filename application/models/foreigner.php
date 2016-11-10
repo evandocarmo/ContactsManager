@@ -49,7 +49,6 @@ class Foreigner extends CI_Model
 
     function edit($data)
     {
-
         $ident = $data['for_id'];
 
         /* unset javascript bindings */
@@ -59,7 +58,7 @@ class Foreigner extends CI_Model
         /* decode the submitted strings */
         foreach ($data as $id => $row)
         {
-            $newData[$id] = (empty($row)) ? utf8_decode("Uninformed") : utf8_decode(htmlentities($row, ENT_QUOTES, "UTF-8"));
+            $newData[$id] = utf8_decode((empty($row) && trim($row) <> '0') ? 'Uninformed' : htmlentities($row, ENT_QUOTES, 'UTF-8'));
         }
 
         /* insert the new contact */
