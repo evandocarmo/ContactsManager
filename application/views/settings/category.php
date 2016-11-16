@@ -8,7 +8,7 @@
             <?php include_once(APPPATH . 'views/includes/navigation.php'); ?>
         </div>
         <div class="container">
-            <div class="container-inner">
+            <div class="container-inner" id="category">
                 <table>
                     <colgroup>
                         <col span="1" style="width: 205px;" />

@@ -8,7 +8,7 @@
             <?php include_once(APPPATH . 'views/includes/navigation.php'); ?>
         </div>
         <div class="container">
-            <div class="container-inner">
+            <div class="container-inner" id="status">
                 <table>
                     <colgroup>
                         <col span="1" style="width: 250px;" />
@@ -26,18 +26,6 @@
                                 <td>
                                     <?php print $row->sta_name; ?>
                                 </td>
-                                <!--<td>
-                                <div class="btn-group">
-                                <ul>
-                                <li>
-                                <a class="btn-success" href="<?php print $this->config->base_url(); ?>settings/status/<?php print $row->sta_id; ?>">
-                                <i class="icon-edit">
-                                </i>
-                                </a>
-                                </li>
-                                </ul>
-                                </div>
-                                </td>-->
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
