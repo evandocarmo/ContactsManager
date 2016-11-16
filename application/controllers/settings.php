@@ -13,7 +13,10 @@ class Settings extends CI_Controller
         $this->load->model('status');
         $this->load->model('category');
         $this->load->model('mpublishers');
+
+        $this->load->library('encrypt');
         $this->load->library('form_validation');
+
         $this->load->helper('form');
     }
 
@@ -140,37 +143,46 @@ class Settings extends CI_Controller
 
     public function publishers($id = NULL)
     {
-        /* list recorded status */
-        $data['publishers'] = $this->mpublishers->get();
+        $index = $this->encrypt->decode(urldecode(str_replace('--', '%2F', $id)));
+
+        if (!is_null($id) && is_numeric($index))
+        {
+            /* Generate ramdom password:
+             * http://stackoverflow.com/a/12210409 */
+            $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            $passw = substr(str_shuffle($chars), 0, 8);
+
+            $this->mpublishers->edit($index, array('pus_pass' => md5($passw)));
+
+            $this->session->set_flashdata('message', "New password generated: {$passw}");
+
+            redirect(site_url("settings/publishers"), 'refresh');
+        }
 
         /* on post entry */
         if ($this->input->post())
         {
-            /* form validation */
+            /* Validate
+             * Login basic information are composed by username and email. */
             $this->form_validation->set_rules('pus_name', 'Name', 'trim|required');
             $this->form_validation->set_rules('pus_mail', 'Email', 'trim|required|valid_email');
-            /* validation proccess */
-            if ($this->form_validation->run() == FALSE)
+
+            if ($this->form_validation->run())
             {
-                $this->load->view('settings/publishers', $data);
-            }
-            else
-            {
-                /* store submitted data */
                 $submit = $this->input->post();
-                /* insert or update registry */
-                $this->mpublishers->edit($submit);
-                /* set return message */
+
+                $this->mpublishers->add($submit);
+
                 $this->session->set_flashdata('message', "Insert sucessfully executed");
-                /* redirect, so the page will be refreshed */
+
                 redirect(site_url("settings/publishers"), 'refresh');
             }
         }
-        else
-        {
-            /* load view and submit params */
-            $this->load->view('settings/publishers', $data);
-        }
+
+        /* list recorded status */
+        $data['publishers'] = $this->mpublishers->get();
+
+        $this->load->view('settings/publishers', $data);
     }
 
 }

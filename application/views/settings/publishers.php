@@ -8,30 +8,30 @@
             <?php include_once(APPPATH . 'views/includes/navigation.php'); ?>
         </div>
         <div class="container">
-            <div class="container-inner">
+            <div class="container-inner" id="publishers-list">
                 <table>
                     <colgroup>
                         <col span="1" style="width: 80px;" />
-                        <col span="1" style="width: 80px;" />
+                        <col span="1" style="width: 100px;" />
                         <col span="1" style="width: 140px;" />
+                        <col span="1" style="width: 50px;" />
                     </colgroup>
                     <thead>
                         <tr>
                             <th>&nbsp;</th>
                             <th>Name</th>
                             <th>Mail</th>
+                            <th>Pass</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php foreach ($publishers as $key => $row): ?>
                             <tr>
-                                <td style="background-color: #<?php print ($row->pus_stts == 0) ? "e66665" : "4d9379"; ?>;">
-                                </td>
+                                <td style="background-color: #<?php print ($row->pus_stts == 0) ? "e66665" : "4d9379"; ?>;">&nbsp;</td>
+                                <td><?php print trim(strtok($row->pus_name, ' ')); ?></td>
+                                <td><?php print trim($row->pus_mail); ?></td>
                                 <td>
-                                    <?php print strtok($row->pus_name, " "); ?>
-                                </td>
-                                <td>
-                                    <?php print $row->pus_mail; ?>
+                                    <a href="<?php print $this->config->base_url(); ?>settings/publishers/<?php print $key; ?>" class="change-password hint--right" aria-label="Change Password"><!--Change Password--></a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

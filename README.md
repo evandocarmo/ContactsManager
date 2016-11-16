@@ -69,6 +69,7 @@ node_modules/bower/bin/bower update
 * [Geocomplete](https://github.com/ubilabs/geocomplete)
 * [Bootstrap Colorpicker 2](https://github.com/itsjavi/bootstrap-colorpicker)
 * [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
+* [Hint.css](https://github.com/chinchang/hint.css/)
 
 After executing the command **update**, [Bower](https://bower.io/) will install the packages above.
 

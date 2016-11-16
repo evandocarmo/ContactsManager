@@ -26,6 +26,9 @@
                         <li>
                             <a href="<?php print site_url("settings/category"); ?>">Category</a>
                         </li>
+                        <li>
+                            <a href="<?php print site_url("settings/publishers"); ?>">Publishers</a>
+                        </li>
                     </ul>
                 </li>
                 <li>

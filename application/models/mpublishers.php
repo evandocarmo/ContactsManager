@@ -3,15 +3,17 @@
 class mpublishers extends CI_Model
 {
 
-    function __construct()
+    public function __construct()
     {
         /* Call the Model constructor */
         parent::__construct();
         /* load log model */
         $this->load->model('log');
+
+        $this->load->library('encrypt');
     }
 
-    function get($id = NULL)
+    public function get($id = NULL)
     {
         $filter = array();
 
@@ -26,10 +28,19 @@ class mpublishers extends CI_Model
 
         $query = $this->db->order_by('pus_name', 'ASC')->get_where('personal_users', $filter);
 
-        return $query->result();
+        $return = array();
+
+        foreach ($query->result() as $value)
+        {
+            $index = str_replace('%2F', '--', urlencode($this->encrypt->encode($value->pus_iden)));
+
+            $return[$index] = $value;
+        }
+
+        return $return;
     }
 
-    function edit($data)
+    public function add($data)
     {
         /* set default password */
         $data["pus_pass"] = $this->config->item('defaultPass');
@@ -42,6 +53,16 @@ class mpublishers extends CI_Model
 
         /* log */
         $this->log->set('INSERT', $this->db->insert_id(), 'personal_users');
+    }
+
+    public function edit($index, $data)
+    {
+        /* Edit */
+        $this->db->where('pus_iden', $index);
+        $this->db->update('personal_users', $data);
+
+        /* Log the Query */
+        $this->log->set('UPDATE', $index, 'personal_users');
     }
 
 }
