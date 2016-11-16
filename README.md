@@ -31,8 +31,8 @@ composer update
 * [FPDI-FPDF](https://github.com/Setasign/FPDI-FPDF)
 * [PHPExcel](https://github.com/PHPOffice/PHPExcel)
 * [Bitly](https://github.com/gabrielkaputa/bitly)
-* [CodeIgniter-PHP-QR-Code](https://github.com/elvisoliveira/strptime-php)
-* [strptime-php](https://github.com/elvisoliveira/CodeIgniter-PHP-QR-Code)
+* [CodeIgniter-PHP-QR-Code](https://github.com/elvisoliveira/CodeIgniter-PHP-QR-Code)
+* [strptime-php](https://github.com/elvisoliveira/strptime-php)
 
 After installing [Composer](https://getcomposer.org/) and executing the command **update** on the command-line interface, [Composer](https://getcomposer.org/) will install the packages above.
 

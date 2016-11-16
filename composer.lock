@@ -53,7 +53,7 @@
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "Strptime.php"
+                    "strptime.php"
                 ]
             },
             "license": [
