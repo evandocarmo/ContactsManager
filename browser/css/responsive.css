@@ -8,9 +8,9 @@ body.settings form#default div.form-actions { float: left; padding: 15px 10px; w
 .command { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin-bottom: 0; padding: 5px 12px; text-align: center; text-decoration: none; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }
 .navigation {float: left;width: 100%;position: relative;z-index: 20;}
 .navigation .navigation-inner {  width: 100%; float: left;}
-.navigation .navigation-inner .navigation-brand {        float: left;width: 100%;background-color: #2b384e;height: 50px;position: fixed;background-image: url("../img/menu-blue-126x126.png");background-position: 0px 16px;background-repeat: repeat-x;}
-.navigation .navigation-inner .navigation-brand a {          float: right;height: 50px;line-height: 50px;color: #fff;text-decoration: none;font-size: 17px;width: calc(100% - 20px);text-align: center;background-color: #2b384e;}
-.navigation .navigation-inner .navigation-menu { float: left; width: 50%; background-color: #34425a;height: calc(100% - 50px);position: fixed;top: 50px;display: none;}
+.navigation .navigation-inner .navigation-brand {float: left;width: 100%;background-color: #2b384e;height: 50px;position: fixed;background-image: url("../img/menu-blue-126x126.png");background-position: 0px 16px;background-repeat: no-repeat;}
+.navigation .navigation-inner .navigation-brand a {float: right;height: 50px;line-height: 50px;color: #fff;text-decoration: none;font-size: 17px;width: calc(100% - 50px);text-align: center;text-indent: -50px;background-color: #2b384e;}
+.navigation .navigation-inner .navigation-menu {float: left;width: 50%;background-color: #34425a;height: calc(100% - 50px);position: fixed;top: 50px;display: none;max-width: 200px;}
 .navigation .navigation-inner .navigation-menu ul { float: left; position: relative; width: 100%; }
 .navigation .navigation-inner .navigation-menu ul li {  float: left; list-style: none;  width: 100%; }
 .navigation .navigation-inner .navigation-menu ul li a {              font-family: verdana;          width: 100%; float: left;text-align: center;height: 50px;line-height: 50px;color: #fff;text-decoration: none;font-size: 16px;}
@@ -21,7 +21,7 @@ body.settings form#default div.form-actions { float: left; padding: 15px 10px; w
 .navigation > .navigation-inner:hover .navigation-menu { display: block; }
 .navigation .navigation-inner .navigation-menu > ul > li:hover {  background-color: #2b384e;}
 .navigation .navigation-inner .navigation-menu > ul > li:hover ul { display: block; }
-.container {float: left;width: 100%;position: relative;z-index: 10;}
+.container {float: left;width: 100%;margin-top: 50px;position: relative;z-index: 10;}
 .container .container-inner { float: left; height: auto; left: 50%; margin: 20px 5% 10px; padding-bottom: 20px; width: 90%; }
 .container .container-inner > p {font-size: 30px;}
 .container .container-inner > p strong {font-size: 30px;}
@@ -125,3 +125,37 @@ div.mobile div.container-inner ul#mobile li div.profile-visit ul li div.body { p
 div.mobile div.container-inner ul#mobile li div.profile-visit ul li div.body div.info {width: 100%;}
 div.mobile div.container-inner ul#mobile li div.profile-visit ul li div.body div.bottom {}
 div.mobile div.container-inner ul#mobile li div.profile-visit ul li div.body div.bottom a {}
+div#dashboard { float: left; width: 100%; }
+div#dashboard dl { border: 1px solid #dddddd; box-sizing: border-box; float: left; margin-bottom: 10px; padding: 10px; width: 100%; }
+div#dashboard dl dt { border-bottom: 1px solid #dddddd; float: left; font-size: 21px; line-height: 21px; margin-bottom: 10px; padding-bottom: 13px; width: 100%; }
+div#dashboard dl dt div#system-updates-title { float: left; font-size: 21px; line-height: 21px; }
+div#dashboard dl dt div#system-updates-form {float: right;}
+div#dashboard dl dt div#system-updates-form form {}
+div#dashboard dl dt div#system-updates-form form select { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+div#dashboard dl dd { float: left; width: 100%; }
+div#dashboard dl dd div#updates-areachart {min-height: 250px;}
+div#dashboard dl dd div#visits-linechart {min-height: 250px;}
+div#dashboard dl dd div#waiting-piechart {float: left;height: 86px;overflow: hidden;width: 50%;}
+div#dashboard dl dd div#waiting-piechart > div {margin-top: -28px;}
+div#dashboard dl dd div#waiting-numbers {float: left;width: 50%;}
+div#dashboard dl dd div#waiting-numbers ul {float: left;width: 100%;}
+div#dashboard dl dd div#waiting-numbers ul li {box-sizing: border-box;float: left;font-size: 14px;font-weight: bold;height: 40px;line-height: 36px;list-style: outside none none;text-align: center;width: 50%;}
+div#dashboard dl dd div#waiting-numbers ul li:nth-child(2n) {float: right;}
+div#dashboard dl dd div#waiting-numbers ul li.red { background-color: #e66665; margin-bottom: 6px; }
+div#dashboard dl dd div#waiting-numbers ul li.green { background-color: #4d9379; margin-bottom: 6px; }
+div#dashboard dl dd div#waiting-numbers ul li.blue {background-color: #82b5e0;}
+div#dashboard dl dd div#waiting-numbers ul li.yellow {background-color: #ffd602;}
+div#dashboard dl dd div#waiting-unlisted {box-sizing: border-box;float: right;margin-bottom: 10px;padding: 10px;margin-top: 10px;width: 50%;}
+div#dashboard dl dd div#waiting-unlisted div#waiting-unlisted-title { border-bottom: 1px solid #dddddd; float: left; font-size: 21px; line-height: 21px; margin-bottom: 10px; padding-bottom: 13px; width: 100%; }
+div#dashboard dl dd div#waiting-unlisted div#waiting-unlisted-lists { float: left; width: 100%; }
+div#dashboard dl dd div#waiting-unlisted div#waiting-unlisted-lists ul { float: left; width: 100%; }
+div#dashboard dl dd div#waiting-unlisted div#waiting-unlisted-lists ul li { background-color: #fef5f1; border-radius: 2px; float: left; list-style: outside none none; margin-bottom: 5px; margin-right: 5px; }
+div#dashboard dl dd div#waiting-unlisted div#waiting-unlisted-lists ul li a { border: 1px solid #ed541d; border-radius: 5px; color: #8c2e0b; float: left; height: 25px; line-height: 25px; padding: 0 5px; text-decoration: none; }
+div#dashboard dl dd div#waiting-info {box-sizing: border-box;float: left;margin-top: 10px;width: 50%;}
+div#dashboard dl dd div#waiting-info ul { float: left; width: 100%; }
+div#dashboard dl dd div#waiting-info ul li {float: left;list-style: inside square;margin-bottom: 5px;text-align: left;width: 100%;}
+div#dashboard dl dd div#waiting-info ul li span {color: #000000;font-size: 12px;}
+div#dashboard dl dd div#waiting-info ul li.red {color: #e66665;}
+div#dashboard dl dd div#waiting-info ul li.green {color: #4d9379;}
+div#dashboard dl dd div#waiting-info ul li.blue {color: #82b5e0;}
+div#dashboard dl dd div#waiting-info ul li.yellow { color: #ffd602; margin: 0; }
