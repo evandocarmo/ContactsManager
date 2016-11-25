@@ -6,7 +6,7 @@ body.settings form#default fieldset { float: left; width: 563px; }
 body.settings form#default div.form-actions { float: left; padding: 15px 10px; width: 565px; }
 .bottom { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #f5f5f5; background-image: linear-gradient(to bottom, #ffffff, #e6e6e6); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #a2a2a2; border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #000000; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin-bottom: 0; padding: 4px 5px; text-align: center; text-decoration: none; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; }
 .command { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin-bottom: 0; padding: 5px 12px; text-align: center; text-decoration: none; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }
-.navigation {  float: left;   width: 100%; }
+.navigation {float: left;width: 100%;position: relative;z-index: 20;}
 .navigation .navigation-inner {  width: 100%; float: left;}
 .navigation .navigation-inner .navigation-brand {        float: left;width: 100%;background-color: #2b384e;height: 50px;position: fixed;background-image: url("../img/menu-blue-126x126.png");background-position: 0px 16px;background-repeat: repeat-x;}
 .navigation .navigation-inner .navigation-brand a {          float: right;height: 50px;line-height: 50px;color: #fff;text-decoration: none;font-size: 17px;width: calc(100% - 20px);text-align: center;background-color: #2b384e;}
@@ -21,7 +21,7 @@ body.settings form#default div.form-actions { float: left; padding: 15px 10px; w
 .navigation > .navigation-inner:hover .navigation-menu { display: block; }
 .navigation .navigation-inner .navigation-menu > ul > li:hover {  background-color: #2b384e;}
 .navigation .navigation-inner .navigation-menu > ul > li:hover ul { display: block; }
-.container { float: left; width: 100%; }
+.container {float: left;width: 100%;position: relative;z-index: 10;}
 .container .container-inner { float: left; height: auto; left: 50%; margin: 20px 5% 10px; padding-bottom: 20px; width: 90%; }
 .container .container-inner > p {font-size: 30px;}
 .container .container-inner > p strong {font-size: 30px;}
