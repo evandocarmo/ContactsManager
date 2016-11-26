@@ -371,6 +371,8 @@ class mfieldservice extends CI_Model
         $data = array();
 
         $basepath = BASEPATH . "../";
+        
+        $ciqrcode = new Ciqrcode();
 
         foreach ($query->result() as $id => $row)
         {
@@ -426,8 +428,6 @@ class mfieldservice extends CI_Model
             $qrcode['level']    = 'H';
             $qrcode['size']     = 2;
             $qrcode['savename'] = $basepath . "assets/img/qrcode/{$row->for_id}.png";
-
-            $ciqrcode = new Ciqrcode();
 
             $ciqrcode->generate($qrcode);
         }
