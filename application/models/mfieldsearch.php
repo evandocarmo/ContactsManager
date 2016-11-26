@@ -26,7 +26,7 @@ class mFieldSearch extends CI_Model
         $SQL .= " ORDER BY fieldsearch.fie_date DESC ";
 
         /* SQL of Pagination */
-        $SQL .= (!is_null($limit) && $limit) ? " LIMIT {$limit[0]}, {$limit[1]} " : "";
+        $SQL   .= (!is_null($limit) && $limit) ? " LIMIT {$limit[0]}, {$limit[1]} " : "";
         $query = $this->db->query($SQL);
         if (is_null($limit))
         {
@@ -181,8 +181,10 @@ class mFieldSearch extends CI_Model
         $data = array();
 
         $basepath = BASEPATH . "../";
+        
+        $ciqrcode = new Ciqrcode();
 
-        foreach ($query->result() as $id => $row)
+        foreach ($query->result() as $row)
         {
             $data[] = $row;
 
@@ -209,8 +211,6 @@ class mFieldSearch extends CI_Model
             $qrcode['level']    = 'H';
             $qrcode['size']     = 2;
             $qrcode['savename'] = $basepath . "assets/img/qrcode/{$row->fie_foreigner}.png";
-
-            $ciqrcode = new Ciqrcode();
 
             $ciqrcode->generate($qrcode);
         }
