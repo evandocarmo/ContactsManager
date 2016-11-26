@@ -100,19 +100,15 @@ class FieldSearch extends CI_Controller
 
     public function printer($date, $group)
     {
-        $agent = $_SERVER['HTTP_USER_AGENT'];
-
         $data['printer'] = $this->mfieldsearch->printer($date, $group);
 
-        $html = $this->load->view('fieldsearch/print', $data, true);
+        $html = $this->load->view('fields/print', $data, true);
 
         header('Content-Type: application/pdf');
-
         $snappy = new Knp\Snappy\Pdf('wkhtmltopdf');
-
         print $snappy->getOutputFromHtml($html);
 
-        /* print $html; */
+        // print $html;
     }
 
     public function add()

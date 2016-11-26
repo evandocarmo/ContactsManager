@@ -81,15 +81,13 @@ class FieldService extends CI_Controller
     {
         $data['printer'] = $this->mfieldservice->printer($ident);
 
-        $html = $this->load->view('fieldservice/print', $data, true);
+        $html = $this->load->view('fields/print', $data, true);
 
         header('Content-Type: application/pdf');
-
         $snappy = new Knp\Snappy\Pdf('wkhtmltopdf');
-
         print $snappy->getOutputFromHtml($html);
 
-        /* print $html; */
+        // print $html;
     }
 
     public function read($identify)
