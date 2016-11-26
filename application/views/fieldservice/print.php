@@ -4,9 +4,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="content-type" content="text/html; charset=<?php print config_item('charset'); ?>" />
         <title>Field Service List</title>
-        <style type="text/css"> @import url(https://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic); @import url("<?php print $this->config->base_url(); ?>browser/css/fieldservice.css"); </style>
+        <style type="text/css">
+            @import url(https://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic); @import url("<?php print $this->config->base_url(); ?>browser/css/fieldservice.css");
+        </style>
+        <script type="text/javascript" src="<?php print $this->config->base_url(); ?>browser/js/_bower.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript">
+            /**
+             * Based on "geocodezip" stackoverflow answer:
+             * http://stackoverflow.com/a/13087341
+             */
             jQuery(function ()
             {
                 var stops = [
@@ -22,8 +29,9 @@
                 Tour_startUp(stops);
                 window.tour.loadMap(map, directionsDisplay);
                 window.tour.fitBounds(map);
-                if (stops.length > 1)
+                if (stops.length > 1) {
                     window.tour.calcRoute(directionsService, directionsDisplay);
+                }
             });
             function Tour_startUp(stops)
             {
@@ -72,8 +80,9 @@
                                         location: new window.google.maps.LatLng(stops[j].Geometry.Latitude, stops[j].Geometry.Longitude),
                                         stopover: true
                                     });
-                                    if (subitemsCounter == itemsPerBatch)
+                                    if (subitemsCounter === itemsPerBatch) {
                                         break;
+                                    }
                                 }
                                 itemsCounter += subitemsCounter;
                                 batches.push(subBatch);
@@ -162,10 +171,7 @@
                 size: new google.maps.Size(150, 50)
             });
             var icons = new Array();
-            icons["red"] = new google.maps.MarkerImage("mapIcons/marker_red.png",
-                    new google.maps.Size(20, 34),
-                    new google.maps.Point(0, 0),
-                    new google.maps.Point(9, 34));
+            icons["red"] = new google.maps.MarkerImage("mapIcons/marker_red.png", new google.maps.Size(20, 34), new google.maps.Point(0, 0), new google.maps.Point(9, 34));
             function getMarkerImage(iconStr)
             {
                 if ((typeof (iconStr) == "undefined") || (iconStr == null))
@@ -180,14 +186,8 @@
                 }
                 return icons[iconStr];
             }
-            var iconImage = new google.maps.MarkerImage('mapIcons/marker_red.png',
-                    new google.maps.Size(20, 34),
-                    new google.maps.Point(0, 0),
-                    new google.maps.Point(9, 34));
-            var iconShadow = new google.maps.MarkerImage('http://www.google.com/mapfiles/shadow50.png',
-                    new google.maps.Size(37, 34),
-                    new google.maps.Point(0, 0),
-                    new google.maps.Point(9, 34));
+            var iconImage = new google.maps.MarkerImage('mapIcons/marker_red.png', new google.maps.Size(20, 34), new google.maps.Point(0, 0), new google.maps.Point(9, 34));
+            var iconShadow = new google.maps.MarkerImage('http://www.google.com/mapfiles/shadow50.png', new google.maps.Size(37, 34), new google.maps.Point(0, 0), new google.maps.Point(9, 34));
             var iconShape = {
                 coord: [9, 0, 6, 1, 4, 2, 2, 4, 0, 8, 0, 12, 1, 14, 2, 16, 5, 19, 7, 23, 8, 26, 9, 30, 9, 34, 11, 34, 11, 30, 12, 26, 13, 24, 14, 21, 16, 18, 18, 16, 20, 12, 20, 8, 18, 4, 16, 2, 15, 1, 13, 0],
                 type: 'poly'
@@ -217,8 +217,7 @@
     <body>
         <div id="container">
             <div id="map">
-                <div id="map-inner">
-                </div>
+                <div id="map-inner">&nbsp;</div>
             </div>
             <div id="con">
                 <ul>
