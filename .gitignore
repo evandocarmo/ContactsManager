@@ -9,6 +9,12 @@ browser/**/_bower.css
 application/config/config.php
 application/config/database.php
 
+### Native Cache
+application/cache/*
+
+### Local Enviroment Changes
+.htaccess
+
 ### Composer
 composer.phar
 /vendor/
