@@ -64,9 +64,8 @@
                                                 <div class="btn-group">
                                                     <ul>
                                                         <li>
-                                                            <a target="_blank" class="btn-info" href="/fieldservice/printer/<?php print $row->fia_iden; ?>">
-                                                            <!--<i class="icon-print">
-                                                            </i>Print-->
+                                                            <a target="_blank" class="btn-info" href="<?php print $this->config->base_url(); ?>fieldservice/printer/<?php print $row->fia_iden; ?>">
+                                                                &nbsp;
                                                             </a>
                                                         </li>
                                                     </ul>
