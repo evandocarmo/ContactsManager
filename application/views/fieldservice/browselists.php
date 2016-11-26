@@ -49,7 +49,7 @@
                                                 <ul class="fieldsearch-visits">
                                                     <?php foreach ($row->visits as $key_ => $row_): ?>
                                                         <li class="<?php print $row_['col_']; ?>">
-                                                            <a href="/profile/contact/<?php print $key_; ?>">
+                                                            <a href="<?php print $this->config->base_url(); ?>profile/contact/<?php print $key_; ?>">
                                                                 <?php print $key_; ?>
                                                             </a>
                                                         </li>

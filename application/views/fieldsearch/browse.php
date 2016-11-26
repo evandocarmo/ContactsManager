@@ -104,7 +104,7 @@
                                                 <div class="btn-group">
                                                     <ul>
                                                         <li>
-                                                            <a class="btn-info" target="_blank" href="/fieldsearch/printer/<?php print $row->fie_timestamp; ?>/<?php print $row->fie_group; ?>">&nbsp;</a>
+                                                            <a class="btn-info" target="_blank" href="<?php print $this->config->base_url(); ?>fieldsearch/printer/<?php print $row->fie_timestamp; ?>/<?php print $row->fie_group; ?>">&nbsp;</a>
                                                         </li>
                                                     </ul>
                                                 </div>
