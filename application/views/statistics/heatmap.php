@@ -50,6 +50,6 @@
                 <div id="heatmapArea"></div>
             </div>
         </div>
-        <?php include_once(APPPATH . 'views/includes/piwik.php'); ?>
+        <?php include_once(APPPATH . 'views/includes/footer.php'); ?>
     </body>
 </html>

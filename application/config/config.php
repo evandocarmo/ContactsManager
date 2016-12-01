@@ -391,6 +391,15 @@ $config['encryptionCode'] = '';
  */
 $config['defaultPass'] = '';
 
+/*
+  |--------------------------------------------------------------------------
+  | Google Analytcs
+  |--------------------------------------------------------------------------
+  |
+  | Track the viwed pages.
+  |
+ */
+$config['google-analytics'] = '';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */

@@ -248,5 +248,6 @@
                 </ul>
             </div>
         </div>
+        <?php include_once(APPPATH . 'views/includes/footer.php'); ?>
     </body>
 </html>

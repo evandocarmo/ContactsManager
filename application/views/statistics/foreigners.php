@@ -85,6 +85,6 @@
                 <button id="enter-full-screen">Enter full Screen</button>
             </div>
         </div>
-        <?php include_once(APPPATH . 'views/includes/piwik.php'); ?>
+        <?php include_once(APPPATH . 'views/includes/footer.php'); ?>
     </body>
 </html>

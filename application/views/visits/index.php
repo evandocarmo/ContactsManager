@@ -290,5 +290,5 @@
             </div>
         </div>
     </body>
-    <?php include_once(APPPATH . 'views/includes/piwik.php'); ?>
+    <?php include_once(APPPATH . 'views/includes/footer.php'); ?>
 </html>
