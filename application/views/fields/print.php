@@ -8,7 +8,7 @@
             @import url(https://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic); @import url("<?php print $this->config->base_url(); ?>browser/css/fieldservice.css");
         </style>
         <script type="text/javascript" src="<?php print $this->config->base_url(); ?>browser/js/_bower.js"></script>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<?php print $this->config->item('google-maps') ?>"></script>
         <script type="text/javascript">
             /**
              * Based on "geocodezip" stackoverflow answer:

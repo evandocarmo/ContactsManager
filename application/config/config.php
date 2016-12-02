@@ -401,5 +401,18 @@ $config['defaultPass'] = '';
  */
 $config['google-analytics'] = '';
 
+/*
+  |--------------------------------------------------------------------------
+  | Google Maps API
+  |--------------------------------------------------------------------------
+  |
+  | Google Maps API key is required for the integration. To get one you can 
+  | follow the guidelines on Google Developers:
+  | https://developers.google.com/maps/documentation/javascript/get-api-key#key
+  |
+ */
+$config['google-maps'] = '';
+
+
 /* End of file config.php */
 /* Location: ./application/config/config.php */

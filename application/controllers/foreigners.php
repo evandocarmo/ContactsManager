@@ -125,7 +125,7 @@ class Foreigners extends CI_Controller
 
         /* download the $url image and save on $file path */
         $file = "{$basepath}/assets/img/maps/{$user->for_id}";
-        $url  = "http://maps.google.com/maps/api/staticmap?center={$user->for_location}&format=png32&zoom=16&size=640x273&maptype=roadmap&markers=color:blue|label:S|{$user->for_location}&sensor=false";
+        $url  = "http://maps.google.com/maps/api/staticmap?center={$user->for_location}&format=png32&zoom=16&size=640x273&maptype=roadmap&markers=color:blue|label:S|{$user->for_location}";
 
         file_put_contents($file . ".png", file_get_contents($url));
 

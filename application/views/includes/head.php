@@ -9,7 +9,7 @@
     @import url("<?php print $this->config->base_url(); ?>browser/css/default.css") (min-width: 900px);
 </style>
 <!-- Scripts -->
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places,visualization"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<?php print $this->config->item('google-maps') ?>&amp;libraries=places,visualization"></script>
 <script type="text/javascript" src="<?php print $this->config->base_url(); ?>browser/js/_bower.js"></script>
 <script type="text/javascript" src="<?php print $this->config->base_url(); ?>browser/js/default.js"></script>
 <!-- Browser -->
