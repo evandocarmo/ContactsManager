@@ -226,14 +226,6 @@ div#waiting-unlisted div#waiting-unlisted-lists { float: left; width: 100%; }
 div#waiting-unlisted div#waiting-unlisted-lists ul { float: left; width: 100%; }
 div#waiting-unlisted div#waiting-unlisted-lists ul li { background-color: #fef5f1; border-radius: 2px; float: left; list-style: outside none none; margin-bottom: 5px; margin-right: 5px; }
 div#waiting-unlisted div#waiting-unlisted-lists ul li a { border: 1px solid #ed541d; border-radius: 5px; color: #8c2e0b; float: left; height: 25px; line-height: 25px; padding: 0 5px; text-decoration: none; }
-div#waiting-info { border: 1px solid #dddddd; box-sizing: border-box; float: left; margin-bottom: 10px; margin-left: 10px; padding: 10px; width: 638px; }
-div#waiting-info ul { float: left; width: 100%; }
-div#waiting-info ul li { float: left; list-style: inside none square; margin-bottom: 5px; text-align: left; width: 100%; }
-div#waiting-info ul li span { color: #000000; font-size: 12px; }
-div#waiting-info ul li.red {color: #e66665;}
-div#waiting-info ul li.green {color: #4d9379;}
-div#waiting-info ul li.blue {color: #82b5e0;}
-div#waiting-info ul li.yellow { color: #ffd602; margin: 0; }
 div.profile-publishers { clear: left; float: left; margin-top: 15px; width: 44%; }
 div.profile-publishers form { float: left; width: 100%; }
 div.profile-publishers form fieldset { border: 0 none; float: left; width: 100%; }
@@ -255,30 +247,33 @@ div#reserved-table {}
 div#reserved-table td.green {background-color: #4d9379;}
 div#reserved-table td.red {background-color: #e66665;}
 div#dashboard { float: left; width: 100%; }
-div#dashboard dl { border: 1px solid #dddddd; box-sizing: border-box; float: left; margin-bottom: 10px; padding: 10px; width: 100%; }
+div#dashboard dl { border: 1px solid #dddddd; box-sizing: border-box; float: left; margin-bottom: 10px; padding: 10px; width: 100%; position: relative;}
 div#dashboard dl dt { border-bottom: 1px solid #dddddd; float: left; font-size: 21px; line-height: 21px; margin-bottom: 10px; padding-bottom: 13px; width: 100%; }
-div#dashboard dl dd { float: left; width: 100%; }
-dd#waiting {}
-dd#waiting div#waiting-piechart { float: left; height: 100px; overflow: hidden; width: 150px; }
-dd#waiting div#waiting-piechart > div {margin-top: -28px;}
-dd#waiting div#waiting-info { height: 100px; margin: 0; width: 490px; }
-div#waiting-numbers { border: 1px solid #dddddd; float: left; margin-right: 10px; width: 114px; }
-div#waiting-numbers ul { float: left; padding: 10px; }
-div#waiting-numbers ul li { box-sizing: border-box; float: left; font-size: 14px; font-weight: bold; height: 36px; line-height: 36px; list-style: outside none none; text-align: center; width: 45px; }
-div#waiting-numbers ul li:nth-child(2n) {float: right;}
-div#waiting-numbers ul li.red { background-color: #e66665; margin-bottom: 6px; }
-div#waiting-numbers ul li.green { background-color: #4d9379; margin-bottom: 6px; }
-div#waiting-numbers ul li.blue {background-color: #82b5e0;}
-div#waiting-numbers ul li.yellow {background-color: #ffd602;}
-dd#waiting div#waiting-unlisted { height: 100px; margin: 0; width: 100px; }
-dd#waiting div#waiting-unlisted div.number { float: left; font-size: 45px; text-align: center; width: 100%; }
-dd#waiting div#waiting-unlisted div.description { float: left; font-size: 12px; text-align: center; width: 100%; }
-div#updates-areachart {min-height: 250px;}
-div#visits-linechart {min-height: 250px;}
 div#dashboard dl dt div#system-updates-title { float: left; font-size: 21px; line-height: 21px; }
 div#dashboard dl dt div#system-updates-form {float: right;}
-div#dashboard dl dt div#system-updates-form form {}
-div#dashboard dl dt div#system-updates-form form select { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+div#dashboard dl dd { float: left; width: 100%; }
+div#dashboard dl dd div#updates-areachart-filter {position: absolute;right: 10px;top: 7px;}
+div#dashboard dl dd div#updates-areachart-filter form {float: left;width: 100%;}
+div#dashboard dl dd div#updates-areachart-filter form fieldset {border: 0;float: left;width: 100%;}
+div#dashboard dl dd div#updates-areachart-filter form fieldset legend {display: none;}
+div#dashboard dl dd div#updates-areachart-filter form fieldset dl  {padding: 0;margin: 0;border: 0;}
+div#dashboard dl dd div#updates-areachart-filter form fieldset dl dt {display: none;}
+div#dashboard dl dd div#updates-areachart-filter form fieldset dl dt label {}
+div#dashboard dl dd div#updates-areachart-filter form fieldset dl dd {float: left;width: 100%;}
+div#dashboard dl dd div#updates-areachart-filter form fieldset dl dd select { border: 1px solid #dddddd; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+div#dashboard dl#waiting-contacts {width:50%;}
+dd#waiting {}
+dd#waiting div#waiting-piechart { float: left; height: 150px; overflow: hidden; width: 100%; }
+dd#waiting div#waiting-info {  width: 100%;   float: left;    margin-top: 10px;}
+dd#waiting div#waiting-info ul { float: left; width: 100%; }
+dd#waiting div#waiting-info ul li { float: left; list-style: inside none square; margin-bottom: 5px; text-align: left; width: 100%; font-weight: bold;}
+dd#waiting div#waiting-info ul li span { color: #000000; font-size: 12px; }
+dd#waiting div#waiting-info ul li.red {color: #e66665;}
+dd#waiting div#waiting-info ul li.green {color: #4d9379;}
+dd#waiting div#waiting-info ul li.blue {color: #82b5e0;}
+dd#waiting div#waiting-info ul li.yellow { color: #ffd602; margin: 0; }
+div#updates-areachart {min-height: 250px;}
+div#visits-linechart {min-height: 250px;}
 div#publishers-list { }
 div#publishers-list table { width: 370px; }
 div#publishers-list table a.change-password {background-color: #f5f5f5;background-image: url("../img/glyphicons-halflings.png");background-repeat: no-repeat;border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #a2a2a2;border-image: none;border-radius: 4px;border-style: solid;border-width: 1px;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);color: #ffffff;cursor: pointer;display: inline-block;font-size: 14px;height: 15px;line-height: 20px;background-position: -281px -20px;margin-bottom: 0;padding: 4px 12px;text-align: center;text-decoration: none;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);vertical-align: middle;width: 4px;}
