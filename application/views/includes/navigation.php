@@ -71,7 +71,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" role="button">Statistics</a>
+                    <a href="#">Statistics</a>
                     <ul>
                         <li>
                             <a href="<?php print site_url("statistics/heatmap"); ?>">Heatmap</a>
