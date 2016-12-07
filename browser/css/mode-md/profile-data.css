@@ -1,0 +1,6 @@
+div.profile-data { float: left; width: 44%; }
+div.profile-data h3 { float: left; font-size: 25px; font-weight: normal; height: 30px; margin-bottom: 10px; max-width: 352px; overflow: hidden; }
+div.profile-data a { background-color: #cccccc; border-radius: 4px; float: left; font-size: 11px; font-weight: bold; margin-left: 10px; margin-top: 7px; padding: 3px 7px; text-decoration: none; }
+div.profile-data table {}
+div.profile-data table tr {}
+div.profile-data table tr td {}

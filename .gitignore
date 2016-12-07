@@ -2,8 +2,12 @@
 assets/**/*.png
 
 ### Generated
-browser/**/_bower.js
-browser/**/_bower.css
+browser/js/bower.js
+
+browser/css/bower.css
+browser/css/mode-md.css
+browser/css/mode-sm.css
+browser/css/mode-xs.css
 
 ### Config
 application/config/config.php

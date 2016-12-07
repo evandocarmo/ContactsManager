@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br" dir="ltr">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <style type="text/css"> @import url("<?php print $this->config->base_url(); ?>browser/css/mobile.css"); /* #heatmap-area { height: 400px; float: left; width: 100%; } */ </style>
+        <style type="text/css"> @import url("<?php print $this->config->base_url(); ?>browser/css/mode-xs.css"); /* #heatmap-area { height: 400px; float: left; width: 100%; } */ </style>
     </head>
     <body>
         <div class="container mobile">

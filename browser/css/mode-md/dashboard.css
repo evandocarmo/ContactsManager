@@ -1,0 +1,18 @@
+div#dashboard { float: left; width: 100%; }
+div#dashboard dl { border: 1px solid #dddddd; box-sizing: border-box; float: left; margin-bottom: 10px; padding: 10px; width: 100%; position: relative; }
+div#dashboard dl dt { border-bottom: 1px solid #dddddd; float: left; font-size: 21px; line-height: 21px; margin-bottom: 10px; padding-bottom: 13px; width: 100%; }
+div#dashboard dl dt div#system-updates-title { float: left; font-size: 21px; line-height: 21px; }
+div#dashboard dl dt div#system-updates-form {float: right;}
+div#dashboard dl dd { float: left; width: 100%; }
+div#dashboard dl dd div#updates-areachart-filter {position: absolute;right: 10px;top: 7px;}
+div#dashboard dl dd div#updates-areachart-filter form {float: left;width: 100%;}
+div#dashboard dl dd div#updates-areachart-filter form fieldset {border: 0;float: left;width: 100%;}
+div#dashboard dl dd div#updates-areachart-filter form fieldset legend {display: none;}
+div#dashboard dl dd div#updates-areachart-filter form fieldset dl  {padding: 0;margin: 0;border: 0;}
+div#dashboard dl dd div#updates-areachart-filter form fieldset dl dt {display: none;}
+div#dashboard dl dd div#updates-areachart-filter form fieldset dl dt label {}
+div#dashboard dl dd div#updates-areachart-filter form fieldset dl dd {float: left;width: 100%;}
+div#dashboard dl dd div#updates-areachart-filter form fieldset dl dd select { border: 1px solid #dddddd; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+div#dashboard dl#waiting-contacts { width: 25%; }
+
+div#waiting-piechart {  float: left; height: 150px; margin-bottom: 10px; width: 100%; }

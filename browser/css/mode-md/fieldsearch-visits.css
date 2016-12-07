@@ -1,0 +1,7 @@
+ul.fieldsearch-visits { float: left; padding-top: 5px; width: 100%; }
+ul.fieldsearch-visits li { border-radius: 4px; float: left; list-style: outside none none; margin-bottom: 5px; margin-right: 5px; }
+ul.fieldsearch-visits li a { color: #ffffff; float: left; height: 25px; line-height: 25px; padding: 0 5px; text-decoration: none; }
+ul.fieldsearch-visits li.red { background-color: #e66665; border: 1px solid #b85250; }
+ul.fieldsearch-visits li.blue { background-color: #82b5e0; border: 1px solid #6991b4; }
+ul.fieldsearch-visits li.green { background-color: #4d9379; border: 1px solid #3f7661; }
+ul.fieldsearch-visits li.yellow { background-color: #ffd602; border: 1px solid #ccac03; }

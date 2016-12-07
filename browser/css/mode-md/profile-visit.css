@@ -1,0 +1,18 @@
+div.profile-visit { position: absolute; right: 0; width: 54%; }
+div.profile-visit h3 { float: left; font-size: 26px; font-weight: normal; width: 100%; }
+div.profile-visit > div { background-color: #cccccc; float: left; height: 30px; line-height: 30px; margin-top: 10px; text-indent: 10px; width: 100%; }
+div.profile-visit > a { float: right; margin-top: 10px; }
+div.profile-visit ul { float: left; width: 100%; }
+div.profile-visit ul li { border: 1px solid #dddddd; float: left; list-style: outside none none; margin-top: 10px; padding: 3%; position: relative; width: 463px; }
+div.profile-visit ul li div { float: left; width: 463px; }
+div.profile-visit ul li div.accordion-heading {}
+div.profile-visit ul li div.accordion-heading a {}
+div.profile-visit ul li div.collapse-body {}
+div.profile-visit ul li div.collapse-body div.collapse-info {}
+div.profile-visit ul li div.collapse-body div.collapse-bottom {}
+div.profile-visit ul li div.collapse-body div.collapse-bottom a {}
+div.profile-visit ul li div.head { background: #cccccc none repeat scroll 0 0; font-weight: bold; height: 30px; line-height: 30px; margin-bottom: 10px; text-indent: 10px; width: 400px; }
+div.profile-visit ul li div.body div.bottom { position: absolute; right: 15px; top: 15px; width: auto; }
+div.profile-visit form#default { float: left; margin-top: 20px; width: 100%; }
+div.profile-visit form#default fieldset { box-sizing: border-box; float: left; width: 100%; }
+div.profile-visit form#default div.form-actions { box-sizing: border-box; padding: 10px; width: 100%; }

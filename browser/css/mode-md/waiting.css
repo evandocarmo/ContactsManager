@@ -1,0 +1,15 @@
+div#waiting {
+    float: left;
+    width: 25%;
+}
+
+div#waiting-info-piechart { float: left; height: 150px; overflow: hidden; width: 100%; }
+
+div#waiting-info {  width: 100%;   float: left;    margin-top: 10px;}
+div#waiting-info ul { float: left; width: 100%; }
+div#waiting-info ul li { float: left; list-style: inside none square; margin-bottom: 5px; text-align: left; width: 100%; font-weight: bold;}
+div#waiting-info ul li span { color: #000000; font-size: 12px; }
+div#waiting-info ul li.red {color: #e66665;}
+div#waiting-info ul li.green {color: #4d9379;}
+div#waiting-info ul li.blue {color: #82b5e0;}
+div#waiting-info ul li.yellow { color: #ffd602; margin: 0; }

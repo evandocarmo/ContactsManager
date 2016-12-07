@@ -1,0 +1,14 @@
+tr#filter {}
+tr#filter input { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 0; text-indent: 5px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+tr#filter select { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+tr#filter button.bottom {width: 97px;}
+
+tr#filter-mobile {}
+tr#filter-mobile input { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 0; text-indent: 5px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+tr#filter-mobile select { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+tr#filter-mobile button.bottom {width: 97px;}
+
+div#filter { float: left; margin-left: 10px; width: 200px; }
+div#filter form { float: left; width: 100%; }
+div#filter form select { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 30px; margin: 0 0 10px; padding: 4px 6px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+div#filter form input {}

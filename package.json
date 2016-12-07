@@ -1,16 +1,17 @@
 {
-  "name": "contactsmanager",
-  "version": "1.0.0",
-  "description": "ContactsManager is a web utility to manage your contacts (duh?) with Google Maps API integration.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Elvis Oliveira <elvis.olv@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "bower": "^1.7.9",
-    "grunt": "^1.0.1",
-    "grunt-bower-concat": "^1.0.0"
-  }
+    "name": "contactsmanager",
+    "version": "1.0.0",
+    "description": "ContactsManager is a web utility to manage your contacts (duh?) with Google Maps API integration.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Elvis Oliveira <elvis.olv@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "bower": "^1.7.9",
+        "grunt": "^1.0.1",
+        "grunt-contrib-concat": "1.0.1",
+        "grunt-bower-concat": "^1.0.0"
+    }
 }

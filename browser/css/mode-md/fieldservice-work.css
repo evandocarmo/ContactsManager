@@ -1,0 +1,14 @@
+div#fieldservice-work { float: right; margin-top: 10px; width: 100%; }
+div#fieldservice-work div.fieldservice-work-view { float: left; margin-bottom: 5px; width: 100%; }
+div#fieldservice-work div.fieldservice-work-view p { float: left; font-weight: bold; padding: 10px; }
+div#fieldservice-work div.fieldservice-work-form { background-color: #f5f5f5; border-top: 1px solid #e5e5e5; box-sizing: border-box; float: right; padding: 10px; width: 100%; }
+div#fieldservice-work div.fieldservice-work-form form { float: left; width: 100%; }
+div#fieldservice-work div.fieldservice-work-form form fieldset { border: 0 none; float: left; }
+div#fieldservice-work div.fieldservice-work-form form fieldset dl { float: left; margin-right: 10px; }
+div#fieldservice-work div.fieldservice-work-form form fieldset dl dt { float: left; height: 32px; margin-right: 10px; }
+div#fieldservice-work div.fieldservice-work-form form fieldset dl dt label { float: left; font-size: 12px; font-weight: bold; height: 32px; line-height: 32px; }
+div#fieldservice-work div.fieldservice-work-form form fieldset dl dd {float: left;}
+div#fieldservice-work div.fieldservice-work-form form fieldset dl dd input { border: 1px solid #cccccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; font-size: 14px; height: 32px; text-indent: 5px; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; width: 100%; }
+div#fieldservice-work div.fieldservice-work-form form fieldset dl dd label { background-color: #e66665; box-sizing: border-box; color: #ffffff; float: left; font-size: 11px; font-weight: bold; margin-top: 5px; padding: 3px; text-indent: 3px; width: 100%; }
+div#fieldservice-work div.fieldservice-work-form form fieldset dl:nth-child(2) {margin: 0;}
+div#fieldservice-work div.fieldservice-work-form form > input { background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; float: left; font-size: 14px; line-height: 20px; margin-bottom: 0; margin-left: 10px; padding: 4px 12px; text-align: center; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }

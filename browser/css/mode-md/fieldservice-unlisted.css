@@ -1,0 +1,6 @@
+div#fieldservice-unlisted { border: 1px solid #dddddd; box-sizing: border-box; float: left; margin-left: 10px; margin-top: 10px; padding: 10px; width: 490px; }
+div#fieldservice-unlisted div#fieldservice-unlisted-title { border-bottom: 1px solid #dddddd; float: left; font-size: 21px; line-height: 21px; margin-bottom: 10px; padding-bottom: 13px; width: 100%; }
+div#fieldservice-unlisted div#fieldservice-unlisted-lists { float: left; width: 100%; }
+div#fieldservice-unlisted div#fieldservice-unlisted-lists ul { float: left; width: 100%; }
+div#fieldservice-unlisted div#fieldservice-unlisted-lists ul li { background-color: #fef5f1; border-radius: 2px; float: left; list-style: outside none none; margin-bottom: 5px; margin-right: 5px; }
+div#fieldservice-unlisted div#fieldservice-unlisted-lists ul li a { border: 1px solid #ed541d; border-radius: 5px; color: #8c2e0b; float: left; height: 25px; line-height: 25px; padding: 0 5px; text-decoration: none; }

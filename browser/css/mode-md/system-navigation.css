@@ -1,0 +1,12 @@
+.navigation { background: #000000 none repeat scroll 0 0; float: left; height: 40px; position: fixed; width: 100%; z-index: 100; }
+.navigation .navigation-inner { height: 40px; margin: 0 auto; width: 900px; }
+.navigation .navigation-inner .navigation-brand { float: left; padding-top: 11px; }
+.navigation .navigation-inner .navigation-brand a { color: #ffffff; font-size: 17px; line-height: 17px; text-decoration: none; }
+.navigation .navigation-inner .navigation-menu { float: right; height: 40px; }
+.navigation .navigation-inner .navigation-menu ul { float: left; height: 40px; }
+.navigation .navigation-inner .navigation-menu ul li { float: right; height: 40px; list-style: outside none none; padding: 0 15px; position: relative; text-align: left; }
+.navigation .navigation-inner .navigation-menu ul li a { color: #ffffff; float: left; padding-top: 11px; text-decoration: none; }
+.navigation .navigation-inner .navigation-menu ul li ul { background: #000000 none repeat scroll 0 0; display: none; left: 0; position: absolute; top: 40px; z-index: 900; }
+.navigation .navigation-inner .navigation-menu ul li ul li { float: left; list-style: outside none none; }
+.navigation .navigation-inner .navigation-menu ul li ul li a { font-size: 12px; line-height: 29px; padding: 0; white-space: nowrap; }
+.navigation .navigation-inner .navigation-menu ul li:hover ul { display: block; height: auto; }

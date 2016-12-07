@@ -1,0 +1,5 @@
+div#status {}
+div#status table { width: 370px; }
+div#status form { float: right; width: 500px; }
+div#status form fieldset { width: calc(100% - 23px); }
+div#status form div.form-actions { padding: 15px 75px; }

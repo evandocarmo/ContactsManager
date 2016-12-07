@@ -1,0 +1,10 @@
+ul.fieldservice-browse-foreigers { float: left; padding-top: 5px; width: 100%; }
+ul.fieldservice-browse-foreigers li { border-radius: 4px; float: left; list-style: outside none none; margin-bottom: 5px; margin-right: 5px; padding: 3px 7px; }
+ul.fieldservice-browse-foreigers li.green { background-color: #4d9379; border: 1px solid #3f7661; }
+ul.fieldservice-browse-foreigers li.orange { background-color: #f47d43; border: 1px solid #c36436; }
+ul.fieldservice-browse-foreigers li.blue { background-color: #82b5e0; border: 1px solid #6991b4; }
+ul.fieldservice-browse-foreigers li.yellow { background-color: #ffd602; border: 1px solid #ccac03; }
+ul.fieldservice-browse-foreigers li.red { background-color: #e66665; border: 1px solid #b85250; }
+ul.fieldservice-browse-foreigers li div.foreiger {}
+ul.fieldservice-browse-foreigers li div.foreiger a { color: #ffffff; float: left; font-size: 13px; font-weight: bold; text-decoration: none; }
+ul.fieldservice-browse-foreigers li div.last-visit { color: #ffffff; float: left; font-size: 10px; }

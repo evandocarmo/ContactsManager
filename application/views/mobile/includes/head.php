@@ -6,8 +6,8 @@
 <title>Contacts Manager</title>
 <style type="text/css">
 	@import url("<?php print $this->config->base_url(); ?>browser/font-awesome/css/font-awesome.min.css");
-	@import url("<?php print $this->config->base_url(); ?>browser/css/_bower.css");
+	@import url("<?php print $this->config->base_url(); ?>browser/css/bower.css");
 	@import url("<?php print $this->config->base_url(); ?>browser/css/mobile/mobile-reset.css"); 
 	@import url("<?php print $this->config->base_url(); ?>browser/css/mobile/mobile-mobil.css"); 
 </style>
-<script type="text/javascript" src="<?php print $this->config->base_url(); ?>browser/js/_bower.js"></script>
+<script type="text/javascript" src="<?php print $this->config->base_url(); ?>browser/js/bower.js"></script>

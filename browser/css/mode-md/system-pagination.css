@@ -1,0 +1,11 @@
+div#pagination { float: left; height: 31px; margin: 10px 0; width: 100%; }
+div#pagination div#pagination-navigation {float: right;}
+div#pagination div#pagination-navigation ul { border-left: 1px solid #dddddd; float: left; }
+div#pagination div#pagination-navigation ul li { background-color: #ffffff; border-bottom: 1px solid #dddddd; border-right: 1px solid #dddddd; border-top: 1px solid #dddddd; box-sizing: border-box; float: left; font-family: "Open Sans",sans-serif; font-size: 12px; font-weight: 600; line-height: 1.42857; list-style: outside none none; margin-left: 0; position: relative; text-decoration: none; }
+div#pagination div#pagination-navigation ul li a { float: left; font-family: "Open Sans",sans-serif; font-size: 12px; font-weight: normal; padding: 6px 12px; text-decoration: none; }
+div#pagination div#pagination-navigation ul li.first {}
+div#pagination div#pagination-navigation ul li.last {}
+div#pagination div#pagination-navigation ul li.current {padding: 6px 12px;}
+div#pagination div#pagination-navigation ul li.next {}
+div#pagination div#pagination-navigation ul li.prev {}
+div#pagination div#pagination-description { float: left; font-size: 12px; line-height: 31px; text-indent: 5px; }

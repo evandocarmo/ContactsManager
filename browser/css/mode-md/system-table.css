@@ -1,0 +1,16 @@
+.container .container-inner table { border-collapse: separate; border-left: 1px solid #dddddd; border-spacing: 0; border-top: 1px solid #dddddd; float: left; width: 100%; }
+.container .container-inner table thead {}
+.container .container-inner table thead tr {}
+.container .container-inner table thead tr th { border-bottom: 1px solid #dddddd; border-right: 1px solid #dddddd; line-height: 20px; padding: 8px; text-align: left; }
+.container .container-inner table tbody {}
+.container .container-inner table tbody tr {}
+.container .container-inner table tbody tr td { background-image: url("../img/bg-colormask.png"); background-position: center center; background-size: 65px auto; border-bottom: 1px solid #dddddd; border-right: 1px solid #dddddd; font-size: 11px; height: 20px; padding: 8px; }
+.container .container-inner table tbody tr td div {}
+.container .container-inner table tbody tr td div ul { float: left; list-style: outside none none; width: 100%; }
+.container .container-inner table tbody tr td div ul li {float: left;}
+.container .container-inner table tbody tr td div ul li a {     background-color: #f5f5f5; background-image: url("../img/glyphicons-halflings.png"); background-repeat: no-repeat; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #a2a2a2; border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; height: 15px; line-height: 20px; margin-bottom: 0; padding: 4px 12px; text-align: center; text-decoration: none; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; width: 4px; }
+.container .container-inner table tbody tr td div ul li a.btn-success {background-position: 7px -68px;}
+.container .container-inner table tbody tr td div ul li a.btn-info { background-position: -89px -43px; margin: 0 4px; }
+.container .container-inner table tbody tr td div ul li a.btn-danger {background-position: -161px 5px;}
+.container .container-inner table tbody tr td div ul li a.btn-download {background-position: -88px -20px;}
+.container .container-inner table tbody tr td div ul li a.btn-list {background-position: -258px -19px;}

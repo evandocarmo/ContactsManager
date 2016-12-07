@@ -1,0 +1,27 @@
+div.profile-fieldsearch form fieldset dl dd select { border: 1px solid #cccccc; border-radius: 5px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; height: 30px; text-indent: 5px; width: 100%; }
+div.profile-fieldsearch { clear: left; float: left; margin-top: 20px; width: 44%; }
+div.profile-fieldsearch div.profile-fieldsearch-titl { float: left; font-size: 26px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-list { border: 1px solid #dddddd; float: left; margin-top: 10px; width: 394px; }
+div.profile-fieldsearch div.profile-fieldsearch-list ul { float: left; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-list ul li { border-bottom: 1px solid #dddddd; float: left; list-style: outside none none; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-list ul li:last-child {border-bottom: medium none;}
+div.profile-fieldsearch div.profile-fieldsearch-list ul li div.fis-date { font-weight: bold; height: 25px; width: 67px; }
+div.profile-fieldsearch div.profile-fieldsearch-list ul li div { float: left; line-height: 25px; padding: 5px; }
+div.profile-fieldsearch div.profile-fieldsearch-list ul li div.fis-cond { border-left: 1px solid #dddddd; border-right: 1px solid #dddddd; height: 25px; width: 265px; }
+div.profile-fieldsearch div.profile-fieldsearch-list ul li div.fis-actn {width: 30px;}
+div.profile-fieldsearch div.profile-fieldsearch-list ul li div.fis-actn a { background-color: #f5f5f5; background-image: url("../img/glyphicons-halflings.png"); background-position: -305px 5px; background-repeat: no-repeat; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #a2a2a2; border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; height: 15px; line-height: 20px; margin-bottom: 0; padding: 4px 12px; text-align: center; text-decoration: none; text-indent: -500em; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; width: 4px; }
+div.profile-fieldsearch div.profile-fieldsearch-form { float: left; margin-top: 10px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form { float: left; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset { border: 1px solid #dddddd; float: left; padding: 10px; width: 374px; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset legend { float: left; font-size: 25px; font-weight: bold; height: 35px; line-height: 35px; margin-left: -10px; margin-top: -50px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl { box-sizing: border-box; float: left; width: 189px; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl:nth-child(1) {width: 105px;}
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl:nth-child(3) {width: 60px;}
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl:nth-child(2) {margin: 0 10px;}
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl dt { float: left; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl dt label { float: left; font-size: 14px; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl dd { float: left; margin-top: 5px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl dd input { border: 1px solid #cccccc; border-radius: 5px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; box-sizing: border-box; float: left; height: 30px; text-indent: 5px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form fieldset dl dd label { background-color: #fef5f1; border: 1px solid #ed541d; box-sizing: border-box; color: #8c2e0b; float: left; font-size: 13px; margin-top: 10px; padding: 5px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form div.form-actions { background-color: #f5f5f5; border-top: 1px solid #e5e5e5; box-sizing: border-box; float: left; margin-top: 10px; padding: 10px; width: 100%; }
+div.profile-fieldsearch div.profile-fieldsearch-form form div.form-actions input {     background-color: #006dcc; background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-image: none; border-radius: 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #ffffff; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin-bottom: 0; padding: 4px 12px; text-align: center; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); vertical-align: middle; }

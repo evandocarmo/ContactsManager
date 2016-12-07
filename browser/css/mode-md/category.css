@@ -1,0 +1,5 @@
+div#category {}
+div#category table { width: 370px; }
+div#category form { float: right; width: 500px; }
+div#category form fieldset { width: calc(100% - 23px); }
+div#category form div.form-actions { padding: 15px 75px; }
