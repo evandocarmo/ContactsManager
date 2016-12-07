@@ -13,7 +13,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/elvisoliveira/CodeIgniter-PHP-QR-Code.git",
-                "reference": "9d92f326bcd3f34131b1ebbb42044ca6715397b3"
+                "reference": "86ccfaf70acef875acd79b91cdfaca521d0f2a2f"
             },
             "type": "library",
             "autoload": {
@@ -40,7 +40,7 @@
             ],
             "description": "A PHP Library to create QR Code. This is a porting library for CodeIgniter Framework, original code from http://phpqrcode.sourceforge.net/",
             "homepage": "https://github.com/elvisoliveira/CodeIgniter-PHP-QR-Code",
-            "time": "2016-11-03 16:42:28"
+            "time": "2016-11-16 18:50:21"
         },
         {
             "name": "elvisoliveira/strptime-php",
@@ -48,7 +48,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/elvisoliveira/strptime-php.git",
-                "reference": "4b492df1ecbd83241717c786f06d99f2650ac691"
+                "reference": "5fa6450f5e8687e1daaf423b986b07997c0fc3ce"
             },
             "type": "library",
             "autoload": {
@@ -67,7 +67,7 @@
             ],
             "description": "An implementation of strptime in PHP",
             "homepage": "https://github.com/elvisoliveira/strptime-php",
-            "time": "2016-11-10 14:21:32"
+            "time": "2016-11-16 18:49:31"
         },
         {
             "name": "gabrielkaputa/bitly",
@@ -418,16 +418,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.1.6",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "66de154ae86b1a07001da9fbffd620206e4faf94"
+                "reference": "02ea84847aad71be7e32056408bb19f3a616cdd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/66de154ae86b1a07001da9fbffd620206e4faf94",
-                "reference": "66de154ae86b1a07001da9fbffd620206e4faf94",
+                "url": "https://api.github.com/repos/symfony/process/zipball/02ea84847aad71be7e32056408bb19f3a616cdd3",
+                "reference": "02ea84847aad71be7e32056408bb19f3a616cdd3",
                 "shasum": ""
             },
             "require": {
@@ -436,7 +436,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -463,7 +463,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-29 14:13:09"
+            "time": "2016-11-24 10:40:28"
         }
     ],
     "packages-dev": [
