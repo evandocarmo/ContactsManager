@@ -2,9 +2,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br" dir="ltr">
     <head>
         <?php include_once(APPPATH . 'views/includes/head.php'); ?>
-        <script type="text/javascript" src="https://www.google.com/jsapi">
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("visualization", "1", {packages: ["corechart"]});
+            google.setOnLoadCallback(function () {
+                var table = [['Task', 'Hours per Day']];
+<?php foreach ($stats as $key => $value): ?>
+                    table.push(['<?php print $key; ?>', <?php print $value; ?>]);
+<?php endforeach; ?>
+                var data = google.visualization.arrayToDataTable(table);
+                var options = {
+                    legend: 'none',
+                    tooltip: {
+                        trigger: 'none'
+                    },
+                    slices: {
+                        0: { color: 'e66665' },
+                        1: { color: '4d9379' },
+                        2: { color: '82b5e0' },
+                        3: { color: 'ffd602' }
+                    }
+                };
+                var chart = new google.visualization.PieChart(document.getElementById('waiting-info-piechart'));
+                chart.draw(data, options);
+            });
         </script>
-        <script type="text/javascript"> google.load("visualization", "1", {packages: ["corechart"]}); google.setOnLoadCallback(drawChart); function drawChart() { var data = google.visualization.arrayToDataTable([ ['Task', 'Hours per Day']<?php foreach ($stats as $key => $value): ?>, ['<?php print $key; ?>', <?php print $value; ?>]<?php endforeach; ?> ]); var options = { legend: 'none', tooltip: {trigger: 'none'}, slices: { 0: {color: 'e66665'}, 1: {color: '4d9379'}, 2: {color: '82b5e0'}, 3: {color: 'ffd602'} } }; var chart = new google.visualization.PieChart(document.getElementById('piechart')); chart.draw(data, options); }</script>
     </head>
     <body>
         <div class="navigation">
@@ -12,23 +34,16 @@
         </div>
         <div class="container">
             <div class="container-inner">
-                <div id="piechart">
-                </div>
-                <div id="waiting-info">
-                    <ul>
-                        <li class="red">
-                            <span>Contacts who were once assigned but not visited.</span>
-                        </li>
-                        <li class="green">
-                            <span>Contacts made, but not confirmed or unconfirmed.</span>
-                        </li>
-                        <li class="blue">
-                            <span>Re-assigned contacts waiting to be done.</span>
-                        </li>
-                        <li class="yellow">
-                            <span>Previously assigned contacts waiting to be done. </span>
-                        </li>
-                    </ul>
+                <div id="waiting">
+                    <div id="waiting-info-piechart">&nbsp;</div>
+                    <div id="waiting-info">
+                        <ul>
+                            <li class="red">Contacts who were once assigned but not visited.</li>
+                            <li class="green">Contacts made, but not confirmed or unconfirmed.</li>
+                            <li class="blue">Re-assigned contacts waiting to be done.</li>
+                            <li class="yellow">Previously assigned contacts waiting to be done.</li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="waiting-unlisted">
                     <div id="waiting-unlisted-title">Unlisted Waiting Contacts</div>
