@@ -5,9 +5,32 @@
         <meta http-equiv="content-type" content="text/html; charset=<?php print config_item('charset'); ?>" />
         <title>Field Service List</title>
         <style type="text/css">
-            @import url(https://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic); @import url("<?php print $this->config->base_url(); ?>browser/css/fieldservice.css");
+            @import url(https://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic);
+            * { box-sizing: border-box; color: #333333; margin: 0; padding: 0; }
+            body {margin: 0;}
+            div#container { float: left; left: 50%; margin-left: -250px; margin-top: 10px; position: relative; width: 500px; }
+            div#container div#map { border: 1px dashed black; float: left; padding: 5px; width: 100%; }
+            div#container div#map div#map-inner { float: left; height: 190px; width: 100%; }
+            div#container div#con { border: 1px dashed black; float: right; margin-top: 10px; padding: 5px; width: 400px; }
+            div#container div#con {}
+            div#container div#con ul { float: left; width: 100%; }
+            div#container div#con ul li { float: left; list-style: outside none none; padding: 5px; width: 100%; }
+            div#container div#con ul li div { font-family: "Noticia Text"; font-size: 13px; }
+            div#container div#con ul li div.qrcod {width: 66px;}
+            div#container div#con ul li div.qrcod img {float: left;}
+            div#container div#con ul li div.cinfo { padding: 5px; width: 300px; }
+            div#container div#con ul li:nth-child(2n+1) {background-color: #ccc;}
+            div#container div#con ul li:nth-child(2n+1) div.qrcod {float: left;}
+            div#container div#con ul li:nth-child(2n+1) div.cinfo {float: right;}
+            div#container div#con ul li:nth-child(2n) div.qrcod {float: right;}
+            div#container div#con ul li:nth-child(2n) div.cinfo {float: left;}
+            div#container div#con ul li div.cinfo div.route { clear: left; float: left; width: 250px; }
+            div#container div#con ul li div.cinfo div.snumb {float: right;}
+            div#container div#con ul li div.cinfo div.sublo { clear: left; float: left; width: 220px; }
+            div#container div#con ul li div.cinfo div.compl { float: left; width: 100%; }
+            div#container div#con ul li div.cinfo div.namec {float: right;}
         </style>
-        <script type="text/javascript" src="<?php print $this->config->base_url(); ?>browser/js/_bower.js"></script>
+        <script type="text/javascript" src="<?php print $this->config->base_url(); ?>browser/js/bower.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<?php print $this->config->item('google-maps') ?>"></script>
         <script type="text/javascript">
             /**
