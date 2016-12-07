@@ -14,7 +14,7 @@
                         <?php print $errors; ?>
                     </div>
                 <?php endif; ?>
-                <form id="default" accept-charset="utf-8" method="post" action="<?php print $this->config->base_url(); ?>login/verify">
+                <form id="default" method="post" action="<?php print $this->config->base_url(); ?>login/verify">
                     <fieldset>
                         <legend>Login</legend>
                         <dl>
@@ -30,7 +30,7 @@
                                 <label for="password">Password</label>
                             </dt>
                             <dd>
-                                <input type="password" id="passowrd" name="password" />
+                                <input type="password" id="password" name="password" />
                             </dd>
                         </dl>
                     </fieldset>
