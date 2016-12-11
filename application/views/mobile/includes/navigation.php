@@ -14,16 +14,6 @@
                     </span>
                     <a href="<?php print site_url("mobile/dashboard"); ?>">Dashboard</a>
                 </li>
-                <li<?php if ($this->uri->segment(2) == "add"): ?> class="active"<?php endif; ?>>
-                    <span class="fa fa-phone">
-                    </span>
-                    <a href="<?php print site_url("mobile/add"); ?>">Phone Call</a>
-                </li>
-                <!-- <li>
-                <span class="fa fa-user-secret">
-                </span>
-                <a href="#">Change Password</a>
-                </li> -->
                 <li>
                     <span class="fa fa-sign-out">
                     </span>

@@ -63,14 +63,6 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Personal</a>
-                    <ul>
-                        <li>
-                            <a href="<?php print site_url("personal/phonecalls"); ?>">Phonecalls</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
                     <a href="#">Statistics</a>
                     <ul>
                         <li>
