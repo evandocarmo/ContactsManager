@@ -1,5 +1,7 @@
 <?php
 
+use GabrielKaputa\Bitly\Bitly;
+
 class mFieldSearch extends CI_Model
 {
 
@@ -181,7 +183,7 @@ class mFieldSearch extends CI_Model
         $data = array();
 
         $basepath = BASEPATH . "../";
-        
+
         $ciqrcode = new Ciqrcode();
 
         foreach ($query->result() as $row)
